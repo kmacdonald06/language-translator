@@ -27,7 +27,7 @@ lastupdated: "2017-05-31"
 ## Before you begin
 {: #prerequisites}
 
-If you already created a service instance, you're all set with these prerequisites. Move on to  Step 1.
+If you already created a service instance, you're all set with these prerequisites. Move on to Step 1.
 {: tip}
 
 1.  Go to the [{{site.data.keyword.languagetranslatorshort}} service](https://console.{DomainName}/catalog/services/language-translator/) and either sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
