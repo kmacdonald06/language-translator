@@ -36,12 +36,11 @@ If you already created a service instance, you're all set with these prerequisit
 ## Step 1: Copy your credentials
 {: #copy-credentials}
 
-After you create the service instance, you land on the dashboard for the instance. Get your service credentials here.
+After you create the service instance, you'll land on the dashboard for the instance. Here you can find the credentials to authenticate to your service instance.
 
 1.  Click **Service credentials**.
 1.  Click **View credentials** under **Actions**.
 1.  Copy the `username` and `password` values.
-
 
 ## Step 2: Translate text
 {: #translate-text}
