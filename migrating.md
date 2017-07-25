@@ -29,7 +29,7 @@ Custom models that you created with the Language Translation service will work w
 
 Follow this process to migrate your application to use an instance of the Language Translator service:
 
-1.  Go to the [Catalog](https://console.ng.bluemix.net/catalog/?category=watson) of {{site.data.keyword.watson}} services in Bluemix.{: new_window}
+1.  Go to the [Catalog](https://console.ng.bluemix.net/catalog/?category=watson) of {{site.data.keyword.watson}} services in Bluemix.
 1.  Click the **Language Translator** tile.
 1. After you log in, specify values for these fields, then click **CREATE** 
     1. Provide a service name. 
