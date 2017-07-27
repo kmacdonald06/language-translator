@@ -96,9 +96,9 @@ To use the provided example as a template for your own glossary or corpus, compl
 
 1.  Copy and paste the example into a text editor.
 
-1.  Change the `srclang` attribute of the `<header>` tag to the [language code](http://www-01.sil.org/iso639-3/codes.asp){: new_window} of the source language that your glossary or parallel corpus uses.
+1.  Change the `srclang` attribute of the `<header>` tag to the [language code ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www-01.sil.org/iso639-3/codes.asp){: new_window} of the source language that your glossary or parallel corpus uses.
 
-1.  Change the `xml:lang` attribute of the `<tuv>` tags to the correct [language code](http://www-01.sil.org/iso639-3/codes.asp){: new_window} for each term or translation.
+1.  Change the `xml:lang` attribute of the `<tuv>` tags to the correct [language code ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www-01.sil.org/iso639-3/codes.asp){: new_window} for each term or translation.
 
     The {{site.data.keyword.languagetranslatorshort}} service uses ISO 639-1 language codes for all languages except Egyptian Arabic, which uses the ISO 639-3 code.
 
