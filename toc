@@ -23,7 +23,6 @@ Language Translator
 
     {: .navgroup id="reference"}
     [API reference](https://www.ibm.com/watson/developercloud/language-translator/api/v2/)
-    release-notes.md
     [Sample app: Watson Language Translator](https://github.com/watson-developer-cloud/language-translator-nodejs)
     
     {: .topicgroup}
@@ -38,7 +37,7 @@ Language Translator
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    [Release notes](https://www.ibm.com/watson/developercloud/doc/language-translator/release-notes.html)
+    release-notes.md
 
     {: .topicgroup}
     Developer community
