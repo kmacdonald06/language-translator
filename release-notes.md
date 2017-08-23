@@ -23,24 +23,29 @@ The following new features and changes to the service are available.
 {: shortdesc}
 
 ## 15 December 2016
+{: #15-december-2016}
 
 Additional News translation models were added: English to and from Japanese
 
 ## 15 November 2016
+{: #15-november-2016}
 
 The tooling that was previously available for the Language Translator service is no longer available or supported. 
 
 Contact your sales representative or customer support for information about how to use the Language Translator API to accomplish the tasks supported by the Language Translator tool.
 
 ## 1 September 2016
+{: #1-september-2016}
 
 The IBM Watson&trade; Language Translation service was rebranded as the {{site.data.keyword.languagetranslatorshort}} service. For information about migrating applications from the Language Translation service to the {{site.data.keyword.languagetranslatorshort}} service, see the [Migrating from Language Translation](/docs/services/language-translator/migrating.html) documentation.
 
 ## 22 March 2016
+{: #22-march-2016}
 
 Support for additional languages was added: English to and from Italian, and Spanish to and from French.
 
 ## 3 December 2015
+{: #3-december-2015}
 
 As of January 15, 2016, all customization capabilities within the Standard Plan are discontinued. Applications that do not use customization features do not need to change, as the Standard Plan remains active for all API calls unrelated to customization or customized models. To use the GA customization features (the Trainable plan) of the Language Translator service with a Bluemix&reg; application that uses an earlier instance of the service, complete the following steps:
 
@@ -52,10 +57,12 @@ As of January 15, 2016, all customization capabilities within the Standard Plan 
 1.  Unbind the earlier service from your app in {{site.data.keyword.Bluemix_notm}}, and then delete it.
 
 ## 6 November 2015
+{: #6-november-2015}
 
 The Language Translator tool beta is released. The tool is a web application that provides a graphical user interface to manage and train models for more accurate machine translation. You can create projects, upload training data, train custom models, and translate text.
 
 ## 1 December 2014
+{: #1-december-2014}
 
 The beta Machine Translator and beta Language Identification APIs have been upgraded and combined into the Language Translator API. To immediately start using the new service, understand and update your code to reflect these changes:
 
