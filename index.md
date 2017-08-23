@@ -17,7 +17,7 @@ lastupdated: "2017-07-19"
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
 
-# About Language Translator
+# About
 
 With the {{site.data.keyword.languagetranslatorfull}} service, you can create an application that identifies the language of input text and uses a domain-specific linguistic model to translate the text into another language.
 {: shortdesc}
