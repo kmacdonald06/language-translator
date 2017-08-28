@@ -29,9 +29,9 @@ Custom models that you created with the Language Translation service will work w
 
 Follow this process to migrate your application to use an instance of the Language Translator service:
 
-1. Go to the [Language Translator catalog page](https://console.bluemix.net/catalog/services/language-translator) in Bluemix, and log in.
+1. Go to the [Language Translator catalog page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/language-translator) in Bluemix, and log in.
 1.  Select a pricing plan that has at least the same level of support as the plan that is associated with the Language Translation instance that your application is currently using, then click **Create**.
-1.  Go to your [Bluemix dashboard](https://console.bluemix.net/dashboard/)
+1.  Go to your [Bluemix dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/dashboard/)
 1.  Select the application that currently uses the Language Translation service from the list that is displayed under **Cloud Foundry Apps**.
 1.  Click **Connections** in the navigation menu.
 1.  Find the card for your Language Translation service instance, right-click on the menu icon, and select **Unbind service**.
@@ -46,4 +46,4 @@ Follow this process to migrate your application to use an instance of the Langua
 1. From the **Connections** page in your application console, click **Connect existing**. Select the instance of the Language Translator service that you created earlier in this process, and click **Connect**.
 1. Click **Restage** in the "Restage app" window.
 
-If your application is not running after restaging is complete, [examine the logs](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_methods) for your application.
+If your application is not running after restaging is complete, [examine the logs ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_methods) for your application.
