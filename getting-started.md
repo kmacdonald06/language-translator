@@ -173,7 +173,7 @@ print(json.dumps(translation, indent=2, ensure_ascii=False))
 {:python}
 {:codeblock} -->
 
-You can use the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/?python#list-models){: new_window} method to view the available models for your service instance.
+You can use the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#list-models){: new_window} method to view the available models for your service instance.
 {:tip}
 
 ## Next steps
