@@ -40,7 +40,7 @@ Each customizable model can store up to 10 customizations per service instance.
 ## Structure of the training data
 {: #structure}
 
-To provide a glossary or corpus of terms for training the {{site.data.keyword.languagetranslatorshort}} service, create a valid UTF-8 encoded document that conforms to the Translation Memory Exchange (TMX) [version 1.4](http://www.ttt.org/oscarstandards/tmx/tmx14.dtd){: new_window} specification. TMX is an XML specification that is designed for machine-translation tools. The following example is a TMX-formatted glossary file with two term and translation pairs:
+To provide a glossary or corpus of terms for training the {{site.data.keyword.languagetranslatorshort}} service, create a valid UTF-8 encoded document that conforms to the Translation Memory Exchange (TMX) [version 1.4 ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ttt.org/oscarstandards/tmx/tmx14.dtd){: new_window} specification. TMX is an XML specification that is designed for machine-translation tools. The following example is a TMX-formatted glossary file with two term and translation pairs:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
