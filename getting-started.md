@@ -30,7 +30,7 @@ lastupdated: "2017-06-19"
 If you already created a service instance, you're all set with these prerequisites. Move on to Step 1.
 {: tip}
 
-1.  Go to the [{{site.data.keyword.languagetranslatorshort}} service](https://console.{DomainName}/catalog/services/language-translator/) and either sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
+1.  Go to the [{{site.data.keyword.languagetranslatorshort}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/catalog/services/language-translator/) and either sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
 1.  After you log in, type `language-tutorial` in the **Service name** field of the {{site.data.keyword.languagetranslatorshort}} page. Click **Create**.
 
 ## Step 1: Copy your credentials
