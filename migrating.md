@@ -41,7 +41,7 @@ Follow this process to migrate your application to use an instance of the {{site
 
     You will restage your application after you add the instance of the {{site.data.keyword.languagetranslatorshort}} service that you created earlier in this process. For now, click **Cancel**.
 
-1.  Modify the source code for your application to replace calls to the Language Translation methods with calls to Language Translator methods. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/){: new_window}.
+1.  Modify the source code for your application to replace calls to the Language Translation methods with calls to {{site.data.keyword.languagetranslatorshort}} methods. For details, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/){: new_window}.
 
 1. From the **Connections** page in your application console, click **Connect existing**. Select the instance of the {{site.data.keyword.languagetranslatorshort}} service that you created earlier in this process, and click **Connect**.
 1. Click **Restage** in the "Restage app" window.
