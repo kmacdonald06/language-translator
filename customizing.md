@@ -25,8 +25,8 @@ Are you creating a translator for use by customer support, and have company-spec
 
 You can customize the {{site.data.keyword.languagetranslatorshort}} model in the following ways:
 
- - Teach the service about pairs of matching terms or phrases in a source and target language. Provide a *forced glossary*, which contains pairs of terms or phrases that are absolute, definitive terms that you want the translation service to treat as mandatory. Or provide a *parallel corpus*, which contains pairs of terms or phrases that serve as alternate translation suggestions that you want the translation service to consider.
- - Upload a large body of text in a target language (referred to as a *monolingual corpus*) to serve as a language sample that the service can evaluate and use to improve overall translation quality.
+- Teach the service about pairs of matching terms or phrases in a source and target language. Provide a *forced glossary*, which contains pairs of terms or phrases that are absolute, definitive terms that you want the translation service to treat as mandatory. Or provide a *parallel corpus*, which contains pairs of terms or phrases that serve as alternate translation suggestions that you want the translation service to consider.
+- Upload a large body of text in a target language (referred to as a *monolingual corpus*) to serve as a language sample that the service can evaluate and use to improve overall translation quality.
 
 To see the list of models that you can customize, use the `GET /v2/models` method and look for the response parameter `customizable=true` in the response for each language model.
 
@@ -126,13 +126,15 @@ iconv -f utf-16 -t utf-8 <utf-16_file_name.tmx> <new_utf-8_file_name.tmx>
 
 Use the `POST /v2/models` method to upload your TMX file and train your translation model. Specify at least one of the following file options to train your custom model:
 
- - `forced_glossary`: A UTF-8 encoded TMX file that contains pairs of matching terms in the source and target language that are seen as absolute by the system. This file completely overwrites the original domain data.
+- `forced_glossary`: A UTF-8 encoded TMX file that contains pairs of matching terms in the source and target language that are seen as absolute by the system. This file completely overwrites the original domain data.
 
     Forced glossaries are limited to a file size of 10 MB. You can currently only upload one forced glossary file per translation model.
- - `parallel_corpus`: A UTF-8 encoded TMX file that contains matching phrases in the source and target language that serve as examples for Watson. Parallel corpora differ from forced glossaries because they do not overwrite the original domain data.
+    
+- `parallel_corpus`: A UTF-8 encoded TMX file that contains matching phrases in the source and target language that serve as examples for Watson. Parallel corpora differ from forced glossaries because they do not overwrite the original domain data.
 
     To successfully train a custom model, a parallel corpus document must contain a minimum of 5,000 term and translation pairs.
- - `monolingual_corpus`: A UTF-8 encoded plain text file that contains a body of text in the target language that is related to what you are translating. Providing a monolingual corpus improves literal translations by making the translation more fluent and natural.
+    
+- `monolingual_corpus`: A UTF-8 encoded plain text file that contains a body of text in the target language that is related to what you are translating. Providing a monolingual corpus improves literal translations by making the translation more fluent and natural.
 
     To successfully train a custom model, a monolingual corpus document must contain a minimum of 1,000 sentences.
 
@@ -164,19 +166,19 @@ curl -u "{username}":"{password}" "https://gateway.watsonplatform.net/language-t
 
 The `STATUS` response parameter describes the state of the model in the training process:
 
-  - `uploading`
-  - `uploaded`
-  - `dispatching`
-  - `queued@<#>`
-  - `training`
-  - `trained`
-  - `publishing`
-  - `available`
+- `uploading`
+- `uploaded`
+- `dispatching`
+- `queued@<#>`
+- `training`
+- `trained`
+- `publishing`
+- `available`
 
 When the model status is `available`, your model is ready to use with your service instance. If your model is deleted, or if it encounters an error in the training process, you might see one of the following errors:
 
-  - `deleted`
-  - `error`
+- `deleted`
+- `error`
 
 ## Using a custom translation model
 
