@@ -46,4 +46,4 @@ Follow this process to migrate your application to use an instance of the Langua
 1. From the **Connections** page in your application console, click **Connect existing**. Select the instance of the Language Translator service that you created earlier in this process, and click **Connect**.
 1. Click **Restage** in the "Restage app" window.
 
-If your application is not running after restaging is complete, [examine the logs ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_methods) for your application.
+If your application is not running after restaging is complete, [examine the logs](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_methods) for your application.
