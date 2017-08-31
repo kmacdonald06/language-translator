@@ -47,7 +47,72 @@ To teach the service to perform domain-specific translations, you can make the f
 
 The linguistic models that are provided with the service can perform translations between the following languages:
 
-- **News**: Targeted at news articles and transcripts.  Translate English to and from Arabic, Brazilian Portuguese, French, German, Italian, and Spanish. You can also translate Spanish to and from French.
+- **News**: Targeted at news articles and transcripts.  Translate English to and from Arabic, Brazilian Portuguese, French, German, Italian, Japanese, Korean, and Spanish. You can also translate Spanish to and from French.
 - **Conversational**: Targeted at conversational colloquialisms. Translate English to and from Arabic, Brazilian Portuguese, French, Italian, and Spanish.
-- **Patents**: Targeted at technical and legal terminology. Translate Brazilian Portuguese, Chinese, and Spanish to English.
+- **Patents**: Targeted at technical and legal terminology. Translate Brazilian Portuguese, Chinese, Korean, and Spanish to English.
+
+The `/identify` endpoint can recognize the following languages:
+
+- Afrikaans
+- Albanian
+- Arabic
+- Armenian
+- Azerbaijani
+- Bashkir
+- Basque
+- Belarusian
+- Bengali
+- Bosnian
+- Bulgarian
+- Central Khmer
+- Chinese
+- Chuvash
+- Czech
+- Danish
+- Dutch
+- English
+- Esperanto
+- Estonian
+- Finnish
+- French
+- Georgian
+- German
+- Greek
+- Gujarati
+- Haitian
+- Hebrew
+- Hindi
+- Hungarian
+- Icelandic
+- Indonesian
+- Italian
+- Japanese
+- Kazakh
+- Kirghiz
+- Korean
+- Kurdish
+- Latvian
+- Lithuanian
+- Malayalam
+- Mongolian
+- Norwegian Bokmal
+- Norwegian Nynorsk
+- Panjabi
+- Persian
+- Polish
+- Portuguese
+- Pushto
+- Romanian
+- Russian
+- Slovakian
+- Somali
+- Spanish
+- Swedish
+- Tamil
+- Telugu
+- Traditional Chinese
+- Turkish
+- Ukrainian
+- Urdu
+- Vietnamese
 
