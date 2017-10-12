@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-10-11"
+lastupdated: "2017-10-12"
 
 ---
 <!-- Attribute definitions -->
@@ -28,13 +28,13 @@ lastupdated: "2017-10-11"
 ## Before you begin
 {: #prerequisites}
 
-- You'll need a service instance:
+- Create an instance of the service:
     - {: download} If you're seeing this, you created your service instance. Now get your credentials.
     - Create a project from a service:
         1.  Go to the {{site.data.keyword.watson}} Developer Console [Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/developer/watson/services){: new_window} page.
         1.  Select {{site.data.keyword.languagetranslatorshort}}, click **Add Services**, and either sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
         1.  Type `language-tutorial` as the project name and click **Create Project**.
-- You'll need credentials to authenticate to your service instance:
+- Copy the credentials to authenticate to your service instance:
     - {: download} From the service dashboard (what you're looking at):
         1.  Click the **Service credentials** tab.
         1.  Click **View credentials** under **Actions**.
@@ -43,8 +43,6 @@ lastupdated: "2017-10-11"
     - From your **language-tutorial** project in the Developer Console, copy the `username`,  `password`, and `url` values for `"language_translator"` from the  **Credentials** section.
 
 <!-- Remove this text after dedicated instances have the Developer Console: begin -->
-
-### For {{site.data.keyword.Bluemix_dedicated_notm}}
 
 If you use {{site.data.keyword.Bluemix_dedicated_notm}}, create your service instance from the [{{site.data.keyword.languagetranslatorshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/catalog/services/language-translator/){: new_window} page in the Catalog. For details about how to find your service credentials, see [Service credentials for Watson services ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/watson/getting-started-credentials.html#getting-credentials-manually){: new_window}.
 
