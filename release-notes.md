@@ -30,7 +30,7 @@ New neural machine translation (NMT) models are available to preview. You can tr
 - English to and from: Arabic, Chinese, Dutch, French, German, Italian, Japanese, Korean, Portuguese (Brazilian), and Spanish - French to and from: German, Spanish
 - German to and from: Italian
 
-*These models and the syntax for using them are subject to change before the preview period is over.*
+*These models and the syntax for using them are subject to change.*
 
 To use an NMT preview model in your API request, specify the header `X-Watson-Technology-Preview:2017-07-01` along with the character codes for the source and target languages of the model you want to use. The following example shows how to translate English to Spanish with an NMT preview model.
 
