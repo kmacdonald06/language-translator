@@ -25,7 +25,7 @@ The following new features and changes to the service are available.
 ## 12 January 2018
 {: #12-january-2018}
 
-New neural machine translation (NMT) models are available to preview. You can try NMT models for the following languages. 
+New neural machine translation (NMT) models are available to preview. You can try NMT models for the following language pairs. 
 
 - English to and from: Arabic, Chinese, Dutch, French, German, Italian, Japanese, Korean, Portuguese (Brazilian), and Spanish 
 - French to and from: German, Spanish
