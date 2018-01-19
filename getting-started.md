@@ -58,6 +58,8 @@ curl -X POST --user {username}:{password} --header "Content-Type: application/js
 ```
 {:codeblock}
 
+Language Translator is offering a preview of new Neural Machine Translation models that may offer improved results for your use case. For more details, see the [release notes](release-notes.html#12-january-2018).
+
 <!-- ```
 var watson = require('watson-developer-cloud');
 var language_translator = watson.language_translator({
