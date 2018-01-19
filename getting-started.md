@@ -58,7 +58,7 @@ curl -X POST --user {username}:{password} --header "Content-Type: application/js
 ```
 {:codeblock}
 
-{{site.data.keyword.languagetranslatorshort}} is offering a preview of new Neural Machine Translation models that may offer improved results for your use case. For more details, see the [release notes](release-notes.html#12-january-2018).
+A preview of new Neural Machine Translation models that might improve your translation results is now available. For more details, see the [release notes](release-notes.html#12-january-2018).
 
 <!-- ```
 var watson = require('watson-developer-cloud');
