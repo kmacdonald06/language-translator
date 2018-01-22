@@ -24,8 +24,6 @@ With the {{site.data.keyword.languagetranslatorfull}} service, you can create an
 
 To translate industry-specific jargon or other types of specialized terminology, you can customize the linguistic model to optimize it for your needs.
 
-**Note:** The IBM Watson&trade; Language Translation service was rebranded as the {{site.data.keyword.languagetranslatorshort}} service. The {{site.data.keyword.languagetranslatorshort}} service provides the same capabilities as the Language Translation service, but with simpler pricing. For information about migrating applications from the Language Translation service to the {{site.data.keyword.languagetranslatorshort}} service, see the [Migrating from Language Translation](/docs/services/language-translator/migrating.html) documentation.
-
 ## How to use the service
 
 Use the service to identify the language of text, and to translate text from one language to another. For example, pass an English word, such as *Hello*, and the service can identify it as English. Or translate the English greeting into its Spanish equivalent, *Hola*.
