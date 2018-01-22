@@ -61,7 +61,7 @@ Contact your sales representative or customer support for information about how 
 ## 1 September 2016
 {: #1-september-2016}
 
-The IBM Watson&trade; Language Translation service was rebranded as the {{site.data.keyword.languagetranslatorshort}} service. For information about migrating applications from the Language Translation service to the {{site.data.keyword.languagetranslatorshort}} service, see the [Migrating from Language Translation](/docs/services/language-translator/migrating.html) documentation.
+The IBM Watson&trade; Language Translation service was rebranded as the {{site.data.keyword.languagetranslatorshort}} service.
 
 ## 22 March 2016
 {: #22-march-2016}
