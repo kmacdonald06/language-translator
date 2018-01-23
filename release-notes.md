@@ -54,7 +54,7 @@ Additional News translation models were added: English to and from Japanese
 ## 15 November 2016
 {: #15-november-2016}
 
-The tooling that was previously available for the Language {{site.data.keyword.languagetranslatorshort}} service is no longer available or supported. 
+The tooling that was previously available for the {{site.data.keyword.languagetranslatorshort}} service is no longer available or supported. 
 
 Contact your sales representative or customer support for information about how to use the {{site.data.keyword.languagetranslatorshort}} API to accomplish the tasks supported by the {{site.data.keyword.languagetranslatorshort}} tool.
 
