@@ -16,6 +16,8 @@ lastupdated: "2018-02-06"
 # Language support
 
 ## Translation models
+{: #translation-models
+
 {{site.data.keyword.languagetranslatorshort}} can translate text for the following languages.
 Click a language in the list below to view a list of compatible translation models. 
 
@@ -32,7 +34,7 @@ Click a language in the list below to view a list of compatible translation mode
 - [Spanish](#spanish)
 
 ### Arabic
-{: #arabic)
+{: #arabic}
 
 The following models can translate Arabic text.
 <table>
@@ -75,7 +77,7 @@ The following models can translate Arabic text.
 
 
 ### Chinese
-{: #chinese)
+{: #chinese}
 
 The following models can translate Chinese text.
 
@@ -109,7 +111,7 @@ The following models can translate Chinese text.
 
 
 ### Egyptian Arabic
-{: #egyptian-arabic)
+{: #egyptian-arabic}
 
 The following models can translate Egyptian Arabic text.
 
@@ -142,7 +144,7 @@ The following models can translate Egyptian Arabic text.
 
 
 ### English
-{: #english)
+{: #english}
 
 The following models can translate English text.
 
@@ -307,7 +309,7 @@ The following models can translate English text.
 
 
 ### French
-{: #french)
+{: #french}
 
 The following models can translate French text.
 
@@ -363,7 +365,7 @@ The following models can translate French text.
 
 
 ### German
-{: #german)
+{: #german}
 
 The following models can translate German text.
 
@@ -395,7 +397,7 @@ The following models can translate German text.
 </table>
 
 ### Italian
-{: #italian)
+{: #italian}
 
 The following models can translate Italian text.
 
@@ -428,7 +430,7 @@ The following models can translate Italian text.
 
 
 ### Japanese
-{: #japanese)
+{: #japanese}
 
 The following models can translate Japanese text.
 
@@ -461,7 +463,7 @@ The following models can translate Japanese text.
 
 
 ### Korean
-{: #korean)
+{: #korean}
 
 The following models can translate Korean text.
 
@@ -505,7 +507,7 @@ The following models can translate Korean text.
 
 
 ### Portuguese
-{: #portuguese)
+{: #portuguese}
 
 The following models can translate Portuguese text.
 
@@ -559,7 +561,7 @@ The following models can translate Portuguese text.
 </table>
 
 ### Spanish
-{: #spanish)
+{: #spanish}
 
 The following models can translate Spanish text.
 
@@ -625,6 +627,8 @@ The following models can translate Spanish text.
 
 
 ## Identifiable languages
+{: #identifiable-languages}
+
 The following languages can be identified by the service with the `/identify` endpoint. 
 
 <table>
