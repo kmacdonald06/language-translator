@@ -22,6 +22,7 @@ Language Translator
 
     {: .navgroup id="reference"}
     [API reference](https://www.ibm.com/watson/developercloud/language-translator/api/v2/)
+    [Language support](language-support.md)
     [Sample app: Watson Language Translator](https://github.com/watson-developer-cloud/language-translator-nodejs)
 
     {: .topicgroup}
