@@ -16,7 +16,7 @@ lastupdated: "2018-02-06"
 # Language support
 
 ## Translation models
-{: #translation-models
+{: #translation-models}
 
 {{site.data.keyword.languagetranslatorshort}} can translate the following languages.
 Click a language in the list below to view a list of compatible translation models. 
