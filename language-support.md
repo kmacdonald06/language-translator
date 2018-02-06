@@ -16,8 +16,8 @@ lastupdated: "2018-02-06"
 # Language support
 
 ## Translation models
-{{site.data.keyword.languagetranslatorshort}} can translate text from the following languages.
-Click a language to jump to a list of translation models that translate text from that language.
+{{site.data.keyword.languagetranslatorshort}} can translate text for the following languages.
+Click a language in the list below to view a list of compatible translation models. 
 
 - [Arabic](#arabic)
 - [Chinese](#chinese)
