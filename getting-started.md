@@ -59,6 +59,7 @@ curl -X POST --user {username}:{password} --header "Accept: application/json" --
 {:codeblock}
 
 A preview of new Neural Machine Translation models that offer improved translations is now available. For more details, see the [release notes](release-notes.html#12-january-2018).
+{: tip}
 
 <!-- ```
 var watson = require('watson-developer-cloud');
