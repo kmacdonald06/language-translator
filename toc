@@ -23,12 +23,12 @@ Language Translator
     {: .navgroup id="reference"}
     [API reference](https://www.ibm.com/watson/developercloud/language-translator/api/v2/)
     language-support.md
-    
+
     {: .topicgroup}
     Language support
         [Translation models](translation-models.html)
         [Identifiable languages](identifiable-languages.html)
-    
+
     [Sample app: Watson Language Translator](https://github.com/watson-developer-cloud/language-translator-nodejs)
 
     {: .topicgroup}
@@ -38,6 +38,7 @@ Language Translator
         [Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
         [Python SDK](https://github.com/watson-developer-cloud/python-sdk)
         [.NET SDK](https://github.com/watson-developer-cloud/dotnet-standard-sdk)
+        [OpenWhisk SDK](https://github.com/watson-developer-cloud/openwhisk-sdk)
         [Salesforce SDK](https://github.com/watson-developer-cloud/salesforce-sdk)
         [Swift SDK](https://github.com/watson-developer-cloud/swift-sdk)
         [Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
