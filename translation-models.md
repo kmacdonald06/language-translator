@@ -356,7 +356,7 @@ The following models can translate French text.
  </thead>
 </table>
 
-### German
+## German
 {: #german}
 
 The following models can translate German text.
