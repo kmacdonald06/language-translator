@@ -19,10 +19,15 @@ lastupdated: "2018-01-23"
 
 # About
 
-With the {{site.data.keyword.languagetranslatorfull}} service, you can create an application that identifies the language of text and uses a domain-specific model to translate the text into another language.
+{{site.data.keyword.languagetranslatorfull}} is a translation API that uses domain-specific models to translate text from one language to another.
 {: shortdesc}
 
-In addition to using the provided translation models, you can build upon them to create your own [custom models](customizing.html) for your use case.
+The service provides translation models for the following domains. 
+- **News:** targeted at news articles and transcripts.
+- **Conversational:** targeted at conversations and colloquial phrases.
+- **Patents:** targeted at technical and legal terminology.
+
+In addition to using the provided translation models, you can build upon the news models to create your own [custom models](customizing.html) for your use case.
 
 ## Quick links
 
