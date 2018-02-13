@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-01-23"
+lastupdated: "2018-02-13"
 
 ---
 
@@ -29,7 +29,7 @@ The service provides translation models for the following domains.
 
 In addition to using the provided translation models, you can build upon the news models to create your own [custom models](customizing.html) for your use case.
 
-A preview of new Neural Machine Translation (NMT) models that deliver improved translation results is now available. For more details, view the [release notes](release-notes.html#12-january-2018). 
+A preview of new Neural Machine Translation (NMT) models that offer improved translations is now available. For more details, view the [release notes](release-notes.html#12-january-2018). 
 {: tip}
 
 ## Quick links
