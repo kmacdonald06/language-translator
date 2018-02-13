@@ -25,7 +25,7 @@ lastupdated: "2018-01-23"
 The service provides translation models for the following domains. 
 - **News:** targeted at news articles and transcripts.
 - **Conversational:** targeted at conversations and colloquial phrases.
-- **Patents:** targeted at technical and legal terminology.
+- **Patent:** targeted at technical and legal terminology.
 
 In addition to using the provided translation models, you can build upon the news models to create your own [custom models](customizing.html) for your use case.
 
