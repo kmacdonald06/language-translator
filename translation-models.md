@@ -354,38 +354,7 @@ The following models can translate English text.
      English (en)
     </td>
     <td>
-     Portuguese (pt)<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     it-en
-    </td>
-    <td>
-     Italian (it)
-    </td>
-    <td>
-     English (en)
-    </td>
-    <td>
-     news
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+     Portuguese (pt)
     </td>
     <td>
      conversational
