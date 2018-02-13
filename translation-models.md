@@ -38,13 +38,16 @@ The following models can translate Arabic text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -57,6 +60,9 @@ The following models can translate Arabic text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -67,6 +73,9 @@ The following models can translate Arabic text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     conversational
     </td>
    </tr>
   </tbody>
@@ -81,13 +90,16 @@ The following models can translate Chinese text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -99,6 +111,9 @@ The following models can translate Chinese text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     patent
     </td>
    </tr>
   </tbody>
@@ -113,13 +128,16 @@ The following models can translate Egyptian Arabic text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -132,11 +150,13 @@ The following models can translate Egyptian Arabic text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
   </tbody>
  </thead>
 </table>
-
 
 ## English
 {: #english}
@@ -146,13 +166,16 @@ The following models can translate English text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -165,6 +188,9 @@ The following models can translate English text.
     <td>
      Arabic (ar)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -175,6 +201,9 @@ The following models can translate English text.
     </td>
     <td>
      Arabic (ar)
+    </td>
+    <td>
+     conversational
     </td>
    </tr>
    <tr>
@@ -187,6 +216,9 @@ The following models can translate English text.
     <td>
      Egyptian Arabic (arz)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -197,6 +229,9 @@ The following models can translate English text.
     </td>
     <td>
      German (de)
+    </td>
+    <td>
+     news
     </td>
    </tr>
    <tr>
@@ -209,6 +244,9 @@ The following models can translate English text.
     <td>
      Spanish (es)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -219,6 +257,9 @@ The following models can translate English text.
     </td>
     <td>
      Spanish (es)
+    </td>
+    <td>
+     conversational
     </td>
    </tr>
    <tr>
@@ -231,6 +272,9 @@ The following models can translate English text.
     <td>
      French (fr)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -241,6 +285,9 @@ The following models can translate English text.
     </td>
     <td>
      French (fr)
+    </td>
+    <td>
+     conversational
     </td>
    </tr>
    <tr>
@@ -253,6 +300,9 @@ The following models can translate English text.
     <td>
      Italian (it)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -263,6 +313,9 @@ The following models can translate English text.
     </td>
     <td>
      Japanese (ja)
+    </td>
+    <td>
+     news
     </td>
    </tr>
    <tr>
@@ -275,6 +328,9 @@ The following models can translate English text.
     <td>
      Korean (ko)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -286,6 +342,9 @@ The following models can translate English text.
     <td>
      Portuguese (pt)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -295,12 +354,47 @@ The following models can translate English text.
      English (en)
     </td>
     <td>
-     Portuguese (pt)
+     Portuguese (pt)<table>
+ <thead>
+  <th>
+   Model ID
+  </th>
+  <th>
+   Source
+  </th>
+  <th>
+   Target
+  </th>
+  <th>
+   Domain
+  </th>
+  <tbody>
+   <tr>
+    <td>
+     it-en
+    </td>
+    <td>
+     Italian (it)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
     </td>
    </tr>
   </tbody>
  </thead>
 </table>
+    </td>
+    <td>
+     conversational
+    </td>
+   </tr>
+  </tbody>
+ </thead>
+</table>
+
 
 ## French
 {: #french}
@@ -310,13 +404,16 @@ The following models can translate French text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -329,6 +426,9 @@ The following models can translate French text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -340,6 +440,9 @@ The following models can translate French text.
     <td>
      English (en)
     </td>
+    <td>
+     conversational
+    </td>
    </tr>
    <tr>
     <td>
@@ -350,6 +453,9 @@ The following models can translate French text.
     </td>
     <td>
      Spanish (es)
+    </td>
+    <td>
+     news
     </td>
    </tr>
   </tbody>
@@ -364,13 +470,16 @@ The following models can translate German text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -382,6 +491,9 @@ The following models can translate German text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     news
     </td>
    </tr>
   </tbody>
@@ -396,13 +508,16 @@ The following models can translate Italian text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -414,6 +529,9 @@ The following models can translate Italian text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     news
     </td>
    </tr>
   </tbody>
@@ -428,13 +546,16 @@ The following models can translate Japanese text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -447,10 +568,14 @@ The following models can translate Japanese text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
   </tbody>
  </thead>
 </table>
+
 
 ## Korean
 {: #korean}
@@ -460,13 +585,16 @@ The following models can translate Korean text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -479,6 +607,9 @@ The following models can translate Korean text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -489,6 +620,9 @@ The following models can translate Korean text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     patent
     </td>
    </tr>
   </tbody>
@@ -503,13 +637,16 @@ The following models can translate Portuguese text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -522,6 +659,9 @@ The following models can translate Portuguese text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -533,6 +673,9 @@ The following models can translate Portuguese text.
     <td>
      English (en)
     </td>
+    <td>
+     conversational
+    </td>
    </tr>
    <tr>
     <td>
@@ -543,6 +686,9 @@ The following models can translate Portuguese text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     patent
     </td>
    </tr>
   </tbody>
@@ -557,13 +703,16 @@ The following models can translate Spanish text.
 <table>
  <thead>
   <th>
-   model_id
+   Model ID
   </th>
   <th>
    Source
   </th>
   <th>
    Target
+  </th>
+  <th>
+   Domain
   </th>
   <tbody>
    <tr>
@@ -576,6 +725,9 @@ The following models can translate Spanish text.
     <td>
      English (en)
     </td>
+    <td>
+     news
+    </td>
    </tr>
    <tr>
     <td>
@@ -586,6 +738,9 @@ The following models can translate Spanish text.
     </td>
     <td>
      English (en)
+    </td>
+    <td>
+     conversational
     </td>
    </tr>
    <tr>
@@ -598,6 +753,9 @@ The following models can translate Spanish text.
     <td>
      English (en)
     </td>
+    <td>
+     patent
+    </td>
    </tr>
    <tr>
     <td>
@@ -608,6 +766,9 @@ The following models can translate Spanish text.
     </td>
     <td>
      French (fr)
+    </td>
+    <td>
+     news
     </td>
    </tr>
   </tbody>
