@@ -19,7 +19,7 @@ lastupdated: "2018-03-05"
 
 # Sample apps
 
-Check out the following sample applications that use {{site.data.keyword.languagetranslatorshort}}. 
+Check out the following sample applications to see what you can build with {{site.data.keyword.languagetranslatorshort}}.
 {: shortdesc}
 
 ## Language Translator demo (Node.js)
@@ -27,16 +27,18 @@ Check out the following sample applications that use {{site.data.keyword.languag
 
 This Node.js application provides a basic translation interface that determines the language of the input text as you type.
 
-[Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://language-translator-demo.ng.bluemix.net/)
-[View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/language-translator-nodejs)
+- [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/language-translator-nodejs)
+- [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://language-translator-demo.ng.bluemix.net/)
+
 
 ## Korean Character Recognition (TensorFlow, Android)
 {: #korean-character-recognition}
 
 This mobile application uses TensorFlow and {{site.data.keyword.languagetranslatorshort}} to recognize and translate handwritten Korean characters.
 
-[Demo video ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=Ynusw4RcyRY)
-[View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/tensorflow-hangul-recognition)
+- [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/tensorflow-hangul-recognition)
+- [Video walkthrough ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=Ynusw4RcyRY)
+
 
 
 
