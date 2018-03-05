@@ -25,7 +25,7 @@ Check out the following sample applications that use {{site.data.keyword.languag
 ## Language Translator demo (Node.js)
 {: #language-translator-demo}
 
-This Node.js application provides a graphical interface for translation, including automatic language detection that determines the language of the input text as you type.
+This Node.js application provides a basic translation interface that determines the language of the input text as you type.
 
 [Live demo](https://language-translator-demo.ng.bluemix.net/)
 [View on GitHub](https://github.com/watson-developer-cloud/language-translator-nodejs)
