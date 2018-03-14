@@ -109,7 +109,7 @@ The following models can translate Chinese (Simplified) text.
   <tbody>
    <tr>
     <td>
-     zh-en*
+     zh-en\*
     </td>
     <td>
      Chinese (zh)
@@ -161,7 +161,7 @@ The following models can translate Chinese (Simplified) text.
   <tbody>
    <tr>
     <td>
-     zht-en*
+     zht-en\*
     </td>
     <td>
      Traditional Chinese (zht)
@@ -202,7 +202,7 @@ The following models can translate Dutch text.
   <tbody>
    <tr>
     <td>
-     nl-en*
+     nl-en\*
     </td>
     <td>
      Dutch (nl)
@@ -449,7 +449,7 @@ The following models can translate English text.
    </tr>
    <tr>
     <td>
-     en-pl*
+     en-pl\*
     </td>
     <td>
      English (en)
@@ -491,7 +491,7 @@ The following models can translate English text.
    </tr>
    <tr>
     <td>
-     en-ru*
+     en-ru\*
     </td>
     <td>
      English (en)
@@ -505,7 +505,7 @@ The following models can translate English text.
    </tr>
    <tr>
     <td>
-     en-tr*
+     en-tr\*
     </td>
     <td>
      English (en)
@@ -519,7 +519,7 @@ The following models can translate English text.
    </tr>
    <tr>
     <td>
-     en-zh*
+     en-zh\*
     </td>
     <td>
      English (en)
@@ -533,7 +533,7 @@ The following models can translate English text.
    </tr>
    <tr>
     <td>
-     en-zht*
+     en-zht\*
     </td>
     <td>
      English (en)
@@ -574,7 +574,7 @@ The following models can translate French text.
   <tbody>
    <tr>
     <td>
-     fr-de*
+     fr-de\*
     </td>
     <td>
      French (fr)
@@ -670,7 +670,7 @@ The following models can translate German text.
    </tr>
    <tr>
     <td>
-     de-fr*
+     de-fr\*
     </td>
     <td>
      German (de)
@@ -684,7 +684,7 @@ The following models can translate German text.
    </tr>
    <tr>
     <td>
-     de-it*
+     de-it\*
     </td>
     <td>
      German (de)
@@ -724,7 +724,7 @@ The following models can translate Italian text.
   <tbody>
    <tr>
     <td>
-     it-de*
+     it-de\*
     </td>
     <td>
      Italian (it)
@@ -869,7 +869,7 @@ The following models can translate Polish text.
   <tbody>
    <tr>
     <td>
-     pl-en*
+     pl-en\*
     </td>
     <td>
      Polish (pl)
@@ -976,7 +976,7 @@ The following models can translate Russian text.
   <tbody>
    <tr>
     <td>
-     ru-en*
+     ru-en\*
     </td>
     <td>
      Russian (ru)
@@ -1097,7 +1097,7 @@ The following models can translate Turkish text.
   <tbody>
    <tr>
     <td>
-     tr-en*
+     tr-en\*
     </td>
     <td>
      Turkish (tr)
