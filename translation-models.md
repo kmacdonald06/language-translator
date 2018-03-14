@@ -20,7 +20,9 @@ lastupdated: "2018-02-06"
 Click a language in the list below to view a list of compatible translation models. 
 
 - [Arabic](#arabic)
-- [Chinese](#chinese)
+- [Chinese (Simplified)](#chinese-simplified)
+- [Chinese (Traditional)](#chinese-traditional)
+- [Dutch](#dutch)
 - [Egyptian Arabic](#egyptian-arabic)
 - [English](#english)
 - [French](#french)
@@ -28,8 +30,11 @@ Click a language in the list below to view a list of compatible translation mode
 - [Italian](#italian)
 - [Japanese](#japanese)
 - [Korean](#korean)
+- [Polish](#polish) 
 - [Portuguese](#portuguese)
+- [Russian](#russian)
 - [Spanish](#spanish)
+- [Turkish](#turkish)
 
 ## Arabic
 {: #arabic}
@@ -82,10 +87,10 @@ The following models can translate Arabic text.
  </thead>
 </table>
 
-## Chinese
-{: #chinese}
+## Chinese (Simplified)
+{: #chinese-simplified}
 
-The following models can translate Chinese text.
+The following models can translate Chinese (Simplified) text.
 
 <table>
  <thead>
@@ -104,6 +109,20 @@ The following models can translate Chinese text.
   <tbody>
    <tr>
     <td>
+     zh-en*
+    </td>
+    <td>
+     Chinese (zh)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
      zh-en-patent
     </td>
     <td>
@@ -119,6 +138,88 @@ The following models can translate Chinese text.
   </tbody>
  </thead>
 </table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
+## Chinese (Traditional)
+{: #chinese-traditional}
+
+<table>
+ <thead>
+  <th>
+   Model ID
+  </th>
+  <th>
+   Source
+  </th>
+  <th>
+   Target
+  </th>
+  <th>
+   Domain
+  </th>
+  <tbody>
+   <tr>
+    <td>
+     zht-en*
+    </td>
+    <td>
+     Traditional Chinese (zht)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+  </tbody>
+ </thead>
+</table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
+
+## Dutch
+{: #dutch}
+
+The following models can translate Dutch text.
+
+<table>
+ <thead>
+  <th>
+   Model ID
+  </th>
+  <th>
+   Source
+  </th>
+  <th>
+   Target
+  </th>
+  <th>
+   Domain
+  </th>
+  <tbody>
+   <tr>
+    <td>
+     nl-en*
+    </td>
+    <td>
+     Dutch (nl)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+  </tbody>
+ </thead>
+</table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
 
 ## Egyptian Arabic
 {: #egyptian-arabic}
@@ -334,6 +435,34 @@ The following models can translate English text.
    </tr>
    <tr>
     <td>
+     en-nl*
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     Dutch (nl)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
+     en-pl*
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     Polish (pl)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
      en-pt
     </td>
     <td>
@@ -360,9 +489,67 @@ The following models can translate English text.
      conversational
     </td>
    </tr>
+   <tr>
+    <td>
+     en-ru*
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     Russian (ru)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
+     en-tr*
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     Turkish (tr)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
+     en-zh*
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     Chinese (zh)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
+     en-zht*
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     Traditional Chinese (zht)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
   </tbody>
  </thead>
 </table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
 
 
 ## French
@@ -385,6 +572,20 @@ The following models can translate French text.
    Domain
   </th>
   <tbody>
+   <tr>
+    <td>
+     fr-de*
+    </td>
+    <td>
+     French (fr)
+    </td>
+    <td>
+     German (de)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
    <tr>
     <td>
      fr-en
@@ -431,6 +632,8 @@ The following models can translate French text.
  </thead>
 </table>
 
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
 ## German
 {: #german}
 
@@ -465,9 +668,39 @@ The following models can translate German text.
      news
     </td>
    </tr>
+   <tr>
+    <td>
+     de-fr*
+    </td>
+    <td>
+     German (de)
+    </td>
+    <td>
+     French (fr)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
+     de-it*
+    </td>
+    <td>
+     German (de)
+    </td>
+    <td>
+     Italian (it)
+    </td>
+    <td>
+     news
+    </td>
+   </tr> 
   </tbody>
  </thead>
 </table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
 
 ## Italian
 {: #italian}
@@ -491,6 +724,20 @@ The following models can translate Italian text.
   <tbody>
    <tr>
     <td>
+     it-de*
+    </td>
+    <td>
+     Italian (it)
+    </td>
+    <td>
+     German (de)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+   <tr>
+    <td>
      it-en
     </td>
     <td>
@@ -506,6 +753,8 @@ The following models can translate Italian text.
   </tbody>
  </thead>
 </table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
 
 ## Japanese
 {: #japanese}
@@ -598,6 +847,47 @@ The following models can translate Korean text.
  </thead>
 </table>
 
+## Polish
+{: #polish}
+
+The following models can translate Polish text.
+
+<table>
+ <thead>
+  <th>
+   Model ID
+  </th>
+  <th>
+   Source
+  </th>
+  <th>
+   Target
+  </th>
+  <th>
+   Domain
+  </th>
+  <tbody>
+   <tr>
+    <td>
+     pl-en*
+    </td>
+    <td>
+     Polish (pl)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+  </tbody>
+ </thead>
+</table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
+
 ## Portuguese
 {: #portuguese}
 
@@ -663,6 +953,47 @@ The following models can translate Portuguese text.
   </tbody>
  </thead>
 </table>
+
+## Russian
+{: #russian}
+
+The following models can translate Russian text.
+
+<table>
+ <thead>
+  <th>
+   Model ID
+  </th>
+  <th>
+   Source
+  </th>
+  <th>
+   Target
+  </th>
+  <th>
+   Domain
+  </th>
+  <tbody>
+   <tr>
+    <td>
+     ru-en*
+    </td>
+    <td>
+     Russian (ru)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+  </tbody>
+ </thead>
+</table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
 
 ## Spanish
 {: #spanish}
@@ -743,3 +1074,44 @@ The following models can translate Spanish text.
   </tbody>
  </thead>
 </table>
+
+## Turkish
+{: #turkish}
+
+The following models can translate Turkish text.
+
+<table>
+ <thead>
+  <th>
+   Model ID
+  </th>
+  <th>
+   Source
+  </th>
+  <th>
+   Target
+  </th>
+  <th>
+   Domain
+  </th>
+  <tbody>
+   <tr>
+    <td>
+     tr-en*
+    </td>
+    <td>
+     Turkish (tr)
+    </td>
+    <td>
+     English (en)
+    </td>
+    <td>
+     news
+    </td>
+   </tr>
+  </tbody>
+ </thead>
+</table>
+
+\* This model is only available through the [Neural Machine Translation preview](release-notes.html#12-january-2018). 
+
