@@ -45,6 +45,8 @@ curl -u username:password \
 ```
 {: codeblock}
 
+To watch a video walkthrough that explains how to set up {{site.data.keyword.languagetranslatorshort}} with the NMT preview, [view it on Youtube ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/L6ZC0QaUZ2k).
+
 
 ## 15 December 2016
 {: #15-december-2016}
