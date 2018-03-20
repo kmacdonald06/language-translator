@@ -23,7 +23,6 @@ Language Translator
 
     {: .navgroup id="reference"}
     [API reference](https://www.ibm.com/watson/developercloud/language-translator/api/v2/)
-    language-support.md
 
     {: .topicgroup}
     Language support
