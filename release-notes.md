@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-01-23"
+lastupdated: "2018-03-20"
 
 ---
 
@@ -45,7 +45,7 @@ curl -u username:password \
 ```
 {: codeblock}
 
-To watch a video walkthrough that explains how to set up {{site.data.keyword.languagetranslatorshort}} with the NMT preview, [view it on Youtube ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/L6ZC0QaUZ2k).
+You can watch a [video walkthrough on YouTube ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://youtu.be/L6ZC0QaUZ2k) that explains how to set up {{site.data.keyword.languagetranslatorshort}} with the NMT preview.
 
 
 ## 15 December 2016
