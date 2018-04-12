@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -40,6 +40,7 @@ Click a language in the list below to view a list of compatible translation mode
 {: #arabic}
 
 The following models can translate Arabic text.
+
 <table>
  <thead>
   <th>
@@ -53,6 +54,9 @@ The following models can translate Arabic text.
   </th>
   <th>
    Domain
+  </th>
+  <th>
+   Customizable
   </th>
   <tbody>
    <tr>
@@ -68,6 +72,9 @@ The following models can translate Arabic text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
@@ -81,6 +88,9 @@ The following models can translate Arabic text.
     </td>
     <td>
      conversational
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -106,10 +116,13 @@ The following models can translate Chinese (Simplified) text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     zh-en\*
+     zh-en&ast;
     </td>
     <td>
      Chinese (zh)
@@ -119,6 +132,9 @@ The following models can translate Chinese (Simplified) text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -133,6 +149,9 @@ The following models can translate Chinese (Simplified) text.
     </td>
     <td>
      patent
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -158,10 +177,13 @@ The following models can translate Chinese (Simplified) text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     zht-en\*
+     zht-en&ast;
     </td>
     <td>
      Traditional Chinese (zht)
@@ -171,6 +193,9 @@ The following models can translate Chinese (Simplified) text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -199,10 +224,13 @@ The following models can translate Dutch text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     nl-en\*
+     nl-en&ast;
     </td>
     <td>
      Dutch (nl)
@@ -212,6 +240,9 @@ The following models can translate Dutch text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
   </tbody>
@@ -240,6 +271,9 @@ The following models can translate Egyptian Arabic text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -253,6 +287,9 @@ The following models can translate Egyptian Arabic text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
   </tbody>
@@ -278,6 +315,9 @@ The following models can translate English text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -291,6 +331,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -306,6 +349,9 @@ The following models can translate English text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -319,6 +365,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -334,6 +383,9 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
@@ -347,6 +399,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -362,6 +417,9 @@ The following models can translate English text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -375,6 +433,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -390,6 +451,9 @@ The following models can translate English text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -403,6 +467,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -418,6 +485,9 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
@@ -432,10 +502,13 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
-     en-nl*
+     en-nl&ast;
     </td>
     <td>
      English (en)
@@ -446,10 +519,13 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
-     en-pl\*
+     en-pl&ast;
     </td>
     <td>
      English (en)
@@ -459,6 +535,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
    <tr>
@@ -474,6 +553,9 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
@@ -488,10 +570,13 @@ The following models can translate English text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
-     en-ru\*
+     en-ru&ast;
     </td>
     <td>
      English (en)
@@ -502,10 +587,13 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
-     en-tr\*
+     en-tr&ast;
     </td>
     <td>
      English (en)
@@ -516,10 +604,13 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
-     en-zh\*
+     en-zh&ast;
     </td>
     <td>
      English (en)
@@ -530,10 +621,13 @@ The following models can translate English text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
-     en-zht\*
+     en-zht&ast;
     </td>
     <td>
      English (en)
@@ -543,6 +637,9 @@ The following models can translate English text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -571,10 +668,13 @@ The following models can translate French text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     fr-de\*
+     fr-de&ast;
     </td>
     <td>
      French (fr)
@@ -584,6 +684,9 @@ The following models can translate French text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
    <tr>
@@ -599,6 +702,9 @@ The following models can translate French text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
@@ -613,6 +719,9 @@ The following models can translate French text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -626,6 +735,9 @@ The following models can translate French text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
   </tbody>
@@ -653,6 +765,9 @@ The following models can translate German text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -667,10 +782,13 @@ The following models can translate German text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
-     de-fr\*
+     de-fr&ast;
     </td>
     <td>
      German (de)
@@ -681,10 +799,13 @@ The following models can translate German text.
     <td>
      news
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
-     de-it\*
+     de-it&ast;
     </td>
     <td>
      German (de)
@@ -695,7 +816,10 @@ The following models can translate German text.
     <td>
      news
     </td>
-   </tr> 
+    <td>
+     false
+    </td>
+   </tr>
   </tbody>
  </thead>
 </table>
@@ -721,10 +845,13 @@ The following models can translate Italian text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     it-de\*
+     it-de&ast;
     </td>
     <td>
      Italian (it)
@@ -734,6 +861,9 @@ The following models can translate Italian text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
    <tr>
@@ -748,6 +878,9 @@ The following models can translate Italian text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
   </tbody>
@@ -775,6 +908,9 @@ The following models can translate Japanese text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -788,6 +924,9 @@ The following models can translate Japanese text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
   </tbody>
@@ -814,6 +953,9 @@ The following models can translate Korean text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -828,6 +970,9 @@ The following models can translate Korean text.
     <td>
      news
     </td>
+    <td>
+     true
+    </td>
    </tr>
    <tr>
     <td>
@@ -841,6 +986,9 @@ The following models can translate Korean text.
     </td>
     <td>
      patent
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -866,10 +1014,13 @@ The following models can translate Polish text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     pl-en\*
+     pl-en&ast;
     </td>
     <td>
      Polish (pl)
@@ -879,6 +1030,9 @@ The following models can translate Polish text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -907,6 +1061,9 @@ The following models can translate Portuguese text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -920,6 +1077,9 @@ The following models can translate Portuguese text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -935,6 +1095,9 @@ The following models can translate Portuguese text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -948,6 +1111,9 @@ The following models can translate Portuguese text.
     </td>
     <td>
      patent
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -973,10 +1139,13 @@ The following models can translate Russian text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     ru-en\*
+     ru-en&ast;
     </td>
     <td>
      Russian (ru)
@@ -986,6 +1155,9 @@ The following models can translate Russian text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
@@ -1014,6 +1186,9 @@ The following models can translate Spanish text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
@@ -1027,6 +1202,9 @@ The following models can translate Spanish text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
    <tr>
@@ -1042,6 +1220,9 @@ The following models can translate Spanish text.
     <td>
      conversational
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -1056,6 +1237,9 @@ The following models can translate Spanish text.
     <td>
      patent
     </td>
+    <td>
+     false
+    </td>
    </tr>
    <tr>
     <td>
@@ -1069,6 +1253,9 @@ The following models can translate Spanish text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     true
     </td>
    </tr>
   </tbody>
@@ -1094,10 +1281,13 @@ The following models can translate Turkish text.
   <th>
    Domain
   </th>
+  <th>
+   Customizable
+  </th>
   <tbody>
    <tr>
     <td>
-     tr-en\*
+     tr-en&ast;
     </td>
     <td>
      Turkish (tr)
@@ -1107,6 +1297,9 @@ The following models can translate Turkish text.
     </td>
     <td>
      news
+    </td>
+    <td>
+     false
     </td>
    </tr>
   </tbody>
