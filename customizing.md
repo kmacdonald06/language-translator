@@ -61,17 +61,17 @@ The API response will contain details about your custom model, including its mod
 
 ```json
 {
-	"model_id": "96221b69-8e46-42e4-a3c1-808e17c787ca",
-	"source": "en",
-	"target": "es",
-	"base_model_id": "en-es",
-	"domain": "news",
-	"customizable": false,
-	"default_model": false,
-	"owner": "4937aab7-0f3a-4a75-bee1-0b7a12b6b8",
-	"status": "uploaded",
-	"name": "custom-english-to-spanish",
-	"train_log": null
+  "model_id": "96221b69-8e46-42e4-a3c1-808e17c787ca",
+  "source": "en",
+  "target": "es",
+  "base_model_id": "en-es",
+  "domain": "news",
+  "customizable": false,
+  "default_model": false,
+  "owner": "4937aab7-0f3a-4a75-bee1-0b7a12b6b8",
+  "status": "uploaded",
+  "name": "custom-english-to-spanish",
+  "train_log": null
 }
 ```
 
