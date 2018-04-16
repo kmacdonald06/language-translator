@@ -23,13 +23,12 @@ lastupdated: "2018-04-12"
 Some of the provided translation models in {{site.data.keyword.languagetranslatorshort}} can be extended to learn custom terms and phrases or a general style that's derived from your translation data. Follow these instructions to create your own custom translation model.
 {: shortdesc}
 
-
 ## Before you begin
 
 1. Make sure that your {{site.data.keyword.languagetranslatorshort}} service instance is on an Advanced or Premium pricing plan. The Lite and Standard plans do not support customization.
-1. Find a customizable base model for your language pair.
+1. Find a customizable base model for your language pair. You will need the model ID of the base model in order to train your custom model.
     - Search the models listed on the [Translation models](translation-models.html) page. Look for the value "**true**" in the **Customizable** column, and make sure the **Source** and **Target** languages of the model match your language pair.
-    - Alternatively, you can use the [List models](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#list-models) API method to search models programmatically. You can filter results by language with the `source` and `target` parameters.
+    - Alternatively, you can use the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#list-models) API method to search models programmatically. You can filter results by language with the `source` and `target` parameters.
 
 ## Step 1: Create your training data
 {: #create-your-training-data}
@@ -37,8 +36,11 @@ Some of the provided translation models in {{site.data.keyword.languagetranslato
 The training data format you need to provide depends on which of the following customization options you choose. You can store up to 10 customizations per service instance, and the cumulative file size of all uploaded glossary and corpus files is limited to 250 MB.
 
 - Use a [forced glossary](#forced-glossary) to force certain terms and phrases to be translated in a specific way.
-- Use a [parallel corpus](#parallel-corpus) when you want your custom model to learn from general patterns in your samples. What your model learns from a parallel corpus can improve translation results for input text that the model hasn't seen before.
-- Use a [monolingual corpus](#monolingual-corpus) to make literal translations more fluent and natural.
+- Use a [parallel corpus](#parallel-corpus) when you want your custom model to learn from general translation patterns in your samples. What your model learns from a parallel corpus can improve translation results for input text that the model hasn't been trained on.
+- Use a [monolingual corpus](#monolingual-corpus) to improve the general style of translations without providing explicit translation examples.
+
+The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure to provide examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
+{: tip}
 
 After you have created either a Translation Memory Exchange (TMX) file for forced glossary or parallel corpus customization,
 or a plain text file for monolingual corpus customization, you're ready to train your model.
@@ -46,21 +48,37 @@ or a plain text file for monolingual corpus customization, you're ready to train
 ## Step 2: Train your model
 {: #train-your-model}
 
-Use the [Create model](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#create-model) method to train your model.
+Use the [Create model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#create-model) method to train your model. In your request, specify the model ID of a customizable base model, and training data in one or more of the `forced_glossary`, `parallel_corpus`, or `monolingual_corpus` parameters.
 
 ### Example request
-The following example request uses a forced glossary file, _glossary.tmx_, to create a custom model that extends the `en-fr` base model. See the [Forced glossary customization](#forced-glossary) section for an example forced glossary TMX file.
+The following example request uses a forced glossary file, _glossary.tmx_, to customize the `en-fr` base model. See the [Forced glossary customization](#forced-glossary) section for an example forced glossary TMX file. 
 
 ```curl
-curl -u "{username}":"{password}" -X POST -F base_model_id="en-fr" -F name="custom-en-fr" -F forced_glossary=@glossary.tmx "https://gateway.watsonplatform.net/language-translator/api/v2/models"
+curl --user "{username}":"{password}" -X POST --form base_model_id="en-fr" --form forced_glossary=@glossary.tmx https://gateway.watsonplatform.net/language-translator/api/v2/models
 ```
 
 The API response will contain details about your custom model, including its model ID. Use the model ID to check the status of your model, and to translate sentences once the model is available.
 
+```json
+{
+	"model_id": "96221b69-8e46-42e4-a3c1-808e17c787ca",
+	"source": "en",
+	"target": "es",
+	"base_model_id": "en-es",
+	"domain": "news",
+	"customizable": false,
+	"default_model": false,
+	"owner": "4937aab7-0f3a-4a75-bee1-0b7a12b6b8",
+	"status": "uploaded",
+	"name": "custom-english-to-spanish",
+	"train_log": null
+}
+```
+
 ## Step 3: Check the status of your model
 {: #check-model-status}
 
-Model training might take anywhere from a couple of minutes to several hours depending on how much training data is involved. To see if your model is available, use the [Get model](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#get-model) method and specify the model ID that you saw in Step 2.
+Model training might take anywhere from a couple of minutes to several hours depending on how much training data is involved. To see if your model is available, use the [Get model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#get-model) method and specify the model ID that you saw in Step 2. Also, you can check the status of all of your models with the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/curl.html#list-models) method.
 
 The `status` response attribute describes the state of the model in the training process:
 
@@ -88,13 +106,13 @@ curl -u "{username}":"{password}" "https://gateway.watsonplatform.net/language-t
 ## Step 4: Translate text with your custom model
 {: #translate-text}
 
-To use your custom model, specify the text that you want to translate and your custom model's `model_id` in the [Translate](https://www.ibm.com/watson/developercloud/language-translator/api/v2/#translate) method.
+To use your custom model, specify the text that you want to translate and the custom model's model ID in the [Translate ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/curl.html#translate) method.
 
 ### Example request
 The following example translates text with the custom model identified by the model ID `96221b69-8e46-42e4-a3c1-808e17c787ca`.
 
 ```curl
-curl -u "{username}":"{password}" -X POST -H "Accept: application/json" -d '{"text":"Hello","model_id":"96221b69-8e46-42e4-a3c1-808e17c787ca"}' "https://gateway.watsonplatform.net/language-translator/api/v2/translate"
+curl -u "{username}":"{password}" -X POST -H "Accept: application/json" -d "{\"text\":\"Hello\",\"model_id\":\"96221b69-8e46-42e4-a3c1-808e17c787ca\"}" "https://gateway.watsonplatform.net/language-translator/api/v2/translate"
 ```
 
 
@@ -106,9 +124,8 @@ Use a **forced glossary** to set mandatory translations for specific terms and p
 - Training data format: [TMX](#tmx-files) (UTF-8 encoded)
 - Maximum file size: 10 MB
 
-### Guidelines for forced glossary customization
-
-- Forced glossary examples are sensitive to capitalization, so make sure that your training data reflects the capitalization of content that your application will encounter.
+Forced glossary examples are sensitive to capitalization, so make sure that your training data reflects the capitalization of content that your application will encounter.
+{: tip}
 
 ### Forced glossary example
 
@@ -151,10 +168,6 @@ Use a **parallel corpus** to provide additional translations for the base model 
 - Training data format: [TMX](#tmx-files) (UTF-8 encoded)
 - Minimum number of translation pairs: 5,000
 - Maximum file size: 250 MB
-
-### Guidelines for parallel corpus customization
-- Provide examples of any unorthodox grammar or punctuation that appears in your translation material. The base models are calibrated to best handle formal content with proper grammar and punctuation.
-
 
 ### Parallel corpus example
 
@@ -217,9 +230,6 @@ Use a **monolingual corpus** to improve the general translation style of your mo
 
 - Training data format: plain text (UTF-8 encoded)
 - Minimum number of sentences: 1,000
-
-### Guidelines for monolingual corpus customization
-
 
 ## Creating TMX files
 {: #tmx-files}
@@ -306,7 +316,7 @@ iconv -f utf-16 -t utf-8 <utf-16_file_name.tmx> <new_utf-8_file_name.tmx>
 
 ## Deleting a custom translation model
 
-To delete a custom translation model, use the [Delete model](https://www.ibm.com/watson/developercloud/language-translator/api/v2/curl.html#delete-model) method. If you need to get the model ID of your model, use the [List models](https://www.ibm.com/watson/developercloud/language-translator/api/v2/curl.html#list-models) method.
+To delete a custom translation model, use the [Delete model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/curl.html#delete-model) method.
 
 The following command deletes the translation model with model ID `3e7dfdbe-f757-4150-afee-458e71eb93fb`.
 
