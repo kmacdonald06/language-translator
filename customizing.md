@@ -53,9 +53,10 @@ Use the [Create model ![External link icon](../../icons/launch-glyph.svg "Extern
 ### Example request
 The following example request uses a forced glossary file, _glossary.tmx_, to customize the `en-fr` base model. See the [Forced glossary customization](#forced-glossary) section for an example forced glossary TMX file. 
 
-```curl
+```bash
 curl --user "{username}":"{password}" -X POST --form base_model_id="en-fr" --form forced_glossary=@glossary.tmx https://gateway.watsonplatform.net/language-translator/api/v2/models
 ```
+{: pre}
 
 The API response will contain details about your custom model, including its model ID. Use the model ID to check the status of your model, and to translate sentences once the model is available.
 
@@ -74,6 +75,7 @@ The API response will contain details about your custom model, including its mod
   "train_log": null
 }
 ```
+{: codeblock}
 
 ## Step 3: Check the status of your model
 {: #check-model-status}
@@ -99,9 +101,10 @@ When the model status is `available`, your model is ready to use with your servi
 ### Example request
 The following example gets information for the model identified by the model ID `96221b69-8e46-42e4-a3c1-808e17c787ca`.
 
-```curl
+```bash
 curl -u "{username}":"{password}" "https://gateway.watsonplatform.net/language-translator/api/v2/models/96221b69-8e46-42e4-a3c1-808e17c787ca"
 ```
+{: pre}
 
 ## Step 4: Translate text with your custom model
 {: #translate-text}
@@ -111,9 +114,10 @@ To use your custom model, specify the text that you want to translate and the cu
 ### Example request
 The following example translates text with the custom model identified by the model ID `96221b69-8e46-42e4-a3c1-808e17c787ca`.
 
-```curl
+```bash
 curl -u "{username}":"{password}" -X POST -H "Accept: application/json" -d "{\"text\":\"Hello\",\"model_id\":\"96221b69-8e46-42e4-a3c1-808e17c787ca\"}" "https://gateway.watsonplatform.net/language-translator/api/v2/translate"
 ```
+{: pre}
 
 
 ## Forced glossary customization
@@ -157,6 +161,7 @@ The following example shows a TMX file with two translation pairs. The first pai
   </body>
 </tmx>
 ```
+{: codeblock}
 
 
 
@@ -196,6 +201,7 @@ The following is a small piece of an English to French parallel corpus that was 
     </tu>
     ...
 ```
+{: codeblock}
 
 The general improvements from parallel corpus customization are less predictable than the mandatory results you get from forced glossary customization. For example, consider the following translation unit from the example parallel corpus (lines 172-175).
 
@@ -205,18 +211,21 @@ The general improvements from parallel corpus customization are less predictable
   <tuv xml:lang="fr"><seg>55/102. La mondialisation et ses effets sur le plein exercice des droits de l'homme</seg></tuv>
 </tu>
 ```
+{: codeblock}
 
 If you translate "55/102. Globalization and its impact on the full enjoyment of all human rights" with the base `en-fr` model, the service responds with the following translation.
 
 ```
 55/102. La mondialisation et ses effets sur la pleine jouissance de tous les droits de l'homme
 ```
+{: codeblock}
 
-When the same sentence is translated by a custom model trained with the example corpus, the service responds with a different translation, but it's not identical to the sample translation provided in the training data.
+When the same input sentence is translated by a custom model trained with the example corpus, the service responds with a different translation that is not identical to the sample translation provided in the training data.
 
 ```
 55/102. La mondialisation et ses effets sur le plein exercice de tous les droits de l'homme
 ```
+{: codeblock}
 
 - The custom model translates "the full enjoyment" to "le plein exercice" instead of "la pleine jouissance". The likely explanation for this deviation from the base model behavior is that there are many examples in the corpus where "enjoyment" is translated to "exercice".
 - The custom model translates "of all human rights" to "de tous les droits de l'homme" instead of reproducing the result from the translation unit, "des droits de l'homme". This behavior reflects the trained model's cohesive understanding of the base model, and all of the translation samples that are related "of all human rights" from the parallel corpus.
@@ -226,7 +235,7 @@ In some cases it might seem that a custom model trained with a parallel corpus i
 ## Monolingual corpus customization
 {: #monolingual-corpus}
 
-Use a **monolingual corpus** to improve the general translation style of your model. Provide a plain text file in the target language, and the service will supplement the base model with an improved understanding of the style that it learns from the sample.
+Use a **monolingual corpus** to improve the general translation style of your model. Provide a plain text file in the target language, and the service will supplement the base model with general patterns and style that it learns from the text.
 
 - Training data format: plain text (UTF-8 encoded)
 - Minimum number of sentences: 1,000
