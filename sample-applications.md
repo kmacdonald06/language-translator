@@ -22,6 +22,8 @@ lastupdated: "2018-03-06"
 Check out the following sample applications to see what you can build with {{site.data.keyword.languagetranslatorshort}}.
 {: shortdesc}
 
+These systems are for demonstration purposes only and are not intended to process Personal Data. No Personal Data is to be entered into these systems as they may not have the necessary controls in place to meet the requirements of the General Data Protection Regulation (EU) 2016/679.
+
 ## Language Translator demo (Node.js)
 {: #language-translator-demo}
 
