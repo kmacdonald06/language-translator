@@ -24,6 +24,7 @@ Some of the provided translation models in {{site.data.keyword.languagetranslato
 {: shortdesc}
 
 ## Before you begin
+{: #before-you-begin}
 
 1. Make sure that your {{site.data.keyword.languagetranslatorshort}} service instance is on an Advanced or Premium pricing plan. The Lite and Standard plans do not support customization.
 1. Find a customizable base model for your language pair. You will need the model ID of the base model in order to train your custom model.
@@ -35,14 +36,14 @@ Some of the provided translation models in {{site.data.keyword.languagetranslato
 
 The training data format you need to provide depends on which of the following customization options you choose. You can store up to 10 customizations per service instance, and the cumulative file size of all uploaded glossary and corpus files is limited to 250 MB.
 
-- Use a [forced glossary](#forced-glossary) to force certain terms and phrases to be translated in a specific way.
-- Use a [parallel corpus](#parallel-corpus) when you want your custom model to learn from general translation patterns in your samples. What your model learns from a parallel corpus can improve translation results for input text that the model hasn't been trained on.
-- Use a [monolingual corpus](#monolingual-corpus) to improve the general style of translations without providing explicit translation examples.
+- Use a [forced glossary](#forced-glossary-customization) to force certain terms and phrases to be translated in a specific way.
+- Use a [parallel corpus](#parallel-corpus-customization) when you want your custom model to learn from general translation patterns in your samples. What your model learns from a parallel corpus can improve translation results for input text that the model hasn't been trained on.
+- Use a [monolingual corpus](#monolingual-corpus-customization) to improve the general style of translations without providing explicit translation examples.
 
 The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure to provide examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
 {: tip}
 
-After you have created either a Translation Memory Exchange (TMX) file for forced glossary or parallel corpus customization,
+After you have created either a [Translation Memory Exchange (TMX) file](#creating-tmx-files) for forced glossary or parallel corpus customization,
 or a plain text file for monolingual corpus customization, you're ready to train your model.
 
 ## Step 2: Train your model
@@ -121,11 +122,11 @@ curl -u "{username}":"{password}" -X POST -H "Accept: application/json" -d "{\"t
 
 
 ## Forced glossary customization
-{: #forced-glossary}
+{: #forced-glossary-customization}
 
 Use a **forced glossary** to set mandatory translations for specific terms and phrases. If you want specific control over translation behavior, use a forced glossary.
 
-- Training data format: [TMX](#tmx-files) (UTF-8 encoded)
+- Training data format: [TMX](#creating-tmx-files) (UTF-8 encoded)
 - Maximum file size: 10 MB
 
 Forced glossary examples are sensitive to capitalization, so make sure that your training data reflects the capitalization of content that your application will encounter.
@@ -165,18 +166,18 @@ The following example shows a TMX file with two translation pairs. The first pai
 
 
 
- ## Parallel corpus customization
-{: #parallel-corpus}
+## Parallel corpus customization
+{: #parallel-corpus-customization}
 
 Use a **parallel corpus** to provide additional translations for the base model to learn from. How the resulting custom model translates text depends on the model's combined understanding of the parallel corpus and the base model.
 
-- Training data format: [TMX](#tmx-files) (UTF-8 encoded)
+- Training data format: [TMX](#creating-tmx-files) (UTF-8 encoded)
 - Minimum number of translation pairs: 5,000
 - Maximum file size: 250 MB
 
 ### Parallel corpus example
 
-The following is a small piece of an English to French parallel corpus that was downloaded from the [MultiUN collection](http://opus.nlpl.eu/MultiUN.php) available on the OPUS open parallel corpus website. You can download a compressed version of the entire TMX file [here](http://opus.nlpl.eu/download.php?f=MultiUN/en-fr.tmx.gz).
+The following is a small piece of an English to French parallel corpus that was downloaded from the [MultiUN collection ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://opus.nlpl.eu/MultiUN.php) available on the OPUS open parallel corpus website. You can download a compressed version of the entire TMX file [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://opus.nlpl.eu/download.php?f=MultiUN/en-fr.tmx.gz).
 
 
 ```xml
@@ -233,7 +234,7 @@ When the same input sentence is translated by a custom model trained with the ex
 In some cases it might seem that a custom model trained with a parallel corpus is ignoring a specific example that you provided. In these cases, try searching your training data for other sentences that might be influencing the translation behavior, or consider using a forced glossary if you want to control a specific translation.
 
 ## Monolingual corpus customization
-{: #monolingual-corpus}
+{: #monolingual-corpus-customization}
 
 Use a **monolingual corpus** to improve the general translation style of your model. Provide a plain text file in the target language, and the service will supplement the base model with general patterns and style that it learns from the text.
 
@@ -241,7 +242,7 @@ Use a **monolingual corpus** to improve the general translation style of your mo
 - Minimum number of sentences: 1,000
 
 ## Creating TMX files
-{: #tmx-files}
+{: #creating-tmx-files}
 
 To provide a glossary or corpus of terms for training the {{site.data.keyword.languagetranslatorshort}} service, create a valid UTF-8 encoded document that conforms to the Translation Memory Exchange (TMX) [version 1.4 ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ttt.org/oscarStandards/tmx/){: new_window} specification. TMX is an XML specification that is designed for machine-translation tools. The following example is a TMX-formatted glossary file with two translation units (`<tu>` elements):
 
@@ -324,6 +325,7 @@ iconv -f utf-16 -t utf-8 <utf-16_file_name.tmx> <new_utf-8_file_name.tmx>
 
 
 ## Deleting a custom translation model
+{: #deleting-a-custom-model}
 
 To delete a custom translation model, use the [Delete model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/curl.html#delete-model) method.
 
