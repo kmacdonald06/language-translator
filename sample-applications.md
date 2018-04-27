@@ -24,6 +24,15 @@ Check out the following sample applications to see what you can build with {{sit
 
 These systems are for demonstration purposes only and are not intended to process Personal Data. No Personal Data is to be entered into these systems as they may not have the necessary controls in place to meet the requirements of the General Data Protection Regulation (EU) 2016/679.
 
+## Multilingual Chatbot (Node.js, Python)
+{: #multilingual-chatbot}
+
+This chatbot built with Watson Assistant and Cloud Functions adds support for multiple languages with Language Translator.
+
+- [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/with-watson/multilingual-chatbot)
+- [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://multilingual-chatbot-demo.mybluemix.net/)
+
+
 ## Language Translator demo (Node.js)
 {: #language-translator-demo}
 
