@@ -22,6 +22,14 @@ lastupdated: "2018-03-06"
 Check out the following sample applications to see what you can build with {{site.data.keyword.languagetranslatorshort}}.
 {: shortdesc}
 
+## Multilingual Chatbot (Node.js, Python)
+{: #multilingual-chatbot}
+
+This chatbot, built with Watson Assistant and Cloud Functions, uses Language Translator to support multiple languages.
+
+- [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/with-watson/multilingual-chatbot)
+- [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://multilingual-chatbot-demo.mybluemix.net/)
+
 ## Language Translator demo (Node.js)
 {: #language-translator-demo}
 
