@@ -177,4 +177,4 @@ You can use the [List models ![External link icon](../../icons/launch-glyph.svg 
 - Learn how to [customize](/docs/services/language-translator/customizing.html) {{site.data.keyword.languagetranslatorshort}} to work for your use case.
 - View the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/){:new_window}.
 - Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://watson-api-explorer.mybluemix.net/apis/language-translator-v2){:new_window}.
-- Try the [Node.js sample app ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/watson-developer-cloud/language-translator-nodejs){:new_window}.
+- Explore [sample applications](sample-apps.html).
