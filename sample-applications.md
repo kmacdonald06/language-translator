@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-03-06"
+lastupdated: "2018-05-10"
 
 ---
 
@@ -31,6 +31,8 @@ This chatbot built with Watson Assistant and Cloud Functions adds support for mu
 
 - [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/with-watson/multilingual-chatbot)
 - [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://multilingual-chatbot-demo.mybluemix.net/)
+-[YouTube Video ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=d7DXydORTME)
+- [Read More ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/build-multilingual-chatbots-with-watson-language-translator-watson-assistant-8c38247e8af1)
 
 
 ## Language Translator demo (Node.js)
