@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-05-10"
+lastupdated: "2018-05-18"
 
 ---
 
@@ -34,6 +34,14 @@ This chatbot built with Watson Assistant and Cloud Functions adds support for mu
 - [YouTube video ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=d7DXydORTME)
 - [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/build-multilingual-chatbots-with-watson-language-translator-watson-assistant-8c38247e8af1)
 
+## Serverless Multilingual Conference Rooms (Node.js)
+{: #multilingual-conference-room}
+
+This Node.js application creates a communications channel allowing clients who speak different languages to seamlessly communicate with each other. Useful in meeting rooms and conference calls, see how Watson Language Translator integrates with Text to Speech
+
+- [Read More ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/code/patterns/deploy-serverless-multilingual-conference-room/)
+- [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/serverless-language-translation)
+- [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://translation-mqtt.mybluemix.net/?cm_sp=dw-bluemix-_-code-_-devcenter&cm_mc_uid=03977355774115264326249&cm_mc_sid_50200000=53622421526652186685)
 
 ## Language Translator demo (Node.js)
 {: #language-translator-demo}
