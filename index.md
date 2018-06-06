@@ -19,18 +19,10 @@ lastupdated: "2018-02-13"
 
 # About
 
-{{site.data.keyword.languagetranslatorfull}} is a translation API that uses domain-specific models to translate text from one language to another.
+{{site.data.keyword.languagetranslatorfull}} is a translation API that can identify the language of your text and translate it into different languages programmatically.
 {: shortdesc}
 
-The service provides translation models for the following domains. 
-- **News:** targeted at news articles and transcripts.
-- **Conversational:** targeted at conversations and colloquial phrases.
-- **Patent:** targeted at technical and legal terminology.
-
-In addition to using the provided translation models, you can build upon the news models to create your own [custom models](customizing.html) for your use case.
-
-A preview of new Neural Machine Translation (NMT) models that offer improved translations is now available. For more details, view the [release notes](release-notes.html#12-january-2018). 
-{: tip}
+In addition to using the provided translation models, you can build upon the base translation models to create your own [custom models](customizing.html) for your use case.
 
 ## Quick links
 

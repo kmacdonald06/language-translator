@@ -22,6 +22,34 @@ lastupdated: "2018-03-20"
 The following new features and changes to the service are available.
 {: shortdesc}
 
+## Service API Versioning
+{: shortdesc}
+
+API requests in {{site.data.keyword.languagetranslatorshort}} v3 require a version parameter that takes a date in the format `version=YYYY-MM-DD`. Whenever we change the API in a backwards-incompatible way, we release a new minor version of the API.
+
+Send the version parameter with every API request. The service uses the API version for the date you specify, or the most recent version before that date. Don't default to the current date. Instead, specify a date that matches a version that is compatible with your app, and don't change it until your app is ready for a later version.
+
+The current version is `2018-05-01`.
+
+## 7 June 2018
+{: #7-june-2018}
+
+Lanugage Translator v3 is now available, and **the v2 Language Translator API is now deprecated.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
+
+### What's new in v3
+- New Neural Machine Translation models offer improved translation results, and are now available for customization.
+
+### Breaking changes
+- v3 API requests require a version date query parameter of the form `version=2018-05-01`.
+- The **Translate** and **Identify** methods do not offer the option to return plain text responses in v3.
+- `GET /translate` and `GET /identify` methods are not supported in v3. Use the `POST /translate` and `POST /identify` methods instead. 
+- Custom models trained with the v2 API are not compatible with v3. To use custom models in v3, you will need to train new models.
+- Creating custom models with a parallel corpus and forced glossary now needs to be done in two steps. First, you must customize the model with a parallel corpus. After the model has finished training, you can add the forced glossary to the customized model.
+- Monolingual corpus customization is not supported in v3.
+- Each translation model that is currently available in v3 is designed for a general domain. News, patent, and conversational domain models, are not available in v3. 
+- Error object keys have been renamed so that they are consistent with other services. `error_code` has been renamed to `code`, and `error_message` has been renamed to `error`.
+
+
 ## 12 January 2018
 {: #12-january-2018}
 
