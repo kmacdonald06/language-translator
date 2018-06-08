@@ -49,10 +49,10 @@ lastupdated: "2018-04-27"
 ## Step 1: Translate text
 {: #translate-text}
 
-Use the following example to translate two phrases, "Hello, world!" and "What's up?", from English to Spanish. Replace `{username}` and `{password}` with the service credentials you copied in the previous step.
+Use the following example to translate two phrases, "Hello, world!" and "How are you?", from English to Spanish. Replace `{username}` and `{password}` with the service credentials you copied in the previous step.
 
 ```bash
-curl --user "{username}":"{password}" --request POST --header "Content-Type: application/json" --data '{"text": ["Hello, world.", "How are you?"], "model_id":"en-es"}' https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01
+curl --user "{username}":"{password}" --request POST --header "Content-Type: application/json" --data '{"text": ["Hello, world!", "How are you?"], "model_id":"en-es"}' "https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01"
 ```
 {: pre}
 
@@ -114,7 +114,7 @@ print(json.dumps(translation, indent=2, ensure_ascii=False))
 Use the following example to identify the language of text. Replace `{username}` and `{password}` with your service credentials.
 
 ```bash
-curl --user {username}:{password} --request POST --header "Content-Type: text/plain" --data "Language Translator translates text from one language to another" https://gateway.watsonplatform.net/language-translator/api/v3/identify?version=2018-05-01
+curl --user {username}:{password} --request POST --header "Content-Type: text/plain" --data "Language Translator translates text from one language to another" "https://gateway.watsonplatform.net/language-translator/api/v3/identify?version=2018-05-01"
 ```
 {: pre}
 
