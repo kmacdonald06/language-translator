@@ -34,12 +34,12 @@ Most of the provided translation models in {{site.data.keyword.languagetranslato
 ## Step 1: Create your training data
 {: #create-your-training-data}
 
-The service requires training data to be provided in the [Translation Memory Exchange (TMX) file format](#creating-tmx-files). You can store up to 10 customizations per service instance, and for each customization request the cumulative file size of all uploaded glossary and corpus files is limited to 250 MB. The service supports two types of customization requests. You can either customize a model with a forced glossary or with a corpus that contains parallel sentences:
+The service requires training data to be provided in the [Translation Memory Exchange (TMX) file format](#creating-tmx-files). You can store up to 10 customizations per service instance. The service supports two types of customization requests. You can either customize a model with a forced glossary or with a corpus that contains parallel sentences:
 
 - Use a [forced glossary](#forced-glossary-customization) to force certain terms and phrases to be translated in a specific way.
 - Use a [parallel corpus](#parallel-corpus-customization) when you want your custom model to learn from general translation patterns in your samples. What your model learns from a parallel corpus can improve translation results for input text that the model hasn't been trained on.
 
-To create a model that is customized with a parallel corpus and a forced glossary, proceed in two steps: customize with a parallel corpus first and then customize the resulting model with a glossary. Depending on the type of customization and the size of the uploaded corpora, training can range from minutes for a glossary to several hours for a large parallel corpus. You can upload a single forced glossary file and this file must be less than 10 MB. You can upload multiple parallel corpora tmx files. The cumulative file size of all uploaded files is limited to 250 MB. To successfully train with a parallel corpus you must have at least 5,000 parallel sentences in your corpus.
+To create a model that is customized with a parallel corpus and a forced glossary, proceed in two steps: customize with a parallel corpus first and then customize the resulting model with a glossary. Depending on the type of customization and the size of the uploaded corpora, training can range from minutes for a glossary to several hours for a large parallel corpus. You can only upload a single forced glossary file and this file must be less than 10 MB. However, you can upload multiple parallel corpora tmx files, the cumulative file size of all uploaded files is limited to 250 MB. To successfully train with a parallel corpus you must have at least 5,000 parallel sentences in your corpus.
 
 The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure your training data contains examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
 {: tip}
@@ -117,7 +117,7 @@ To use your custom model, specify the text that you want to translate and the cu
 The following example translates text with the custom model identified by the model ID `96221b69-8e46-42e4-a3c1-808e17c787ca`.
 
 ```bash
-curl --user "{username}":"{password}" --request POST --header "Accept: application/json" --data "{\"text\":\"Hello\",\"model_id\":\"96221b69-8e46-42e4-a3c1-808e17c787ca\"}" https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01
+curl --user "{username}":"{password}" --request POST --header "Content-Type: application/json" --data '{"text":"Hello","model_id":"96221b69-8e46-42e4-a3c1-808e17c787ca"}' https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01
 ```
 {: pre}
 

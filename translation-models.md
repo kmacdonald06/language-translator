@@ -19,6 +19,13 @@ lastupdated: "2018-04-12"
 {{site.data.keyword.languagetranslatorshort}} can translate the following languages.
 Click a language in the list below to view a list of compatible translation models.
 
+Alternatively, you can use the List models API method to get a list of translation models supported by the service programmatically. You can filter results by language with the `source` and `target` parameters. Use the following example to list model for the source language English and target language Spanish.
+
+```bash
+curl --user "{username}":"{password}" "https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01"
+```
+
+
 The Language Translator v2 API has been deprecated. This page lists translation models for the v3 API. The translation models for the v2 API are listed in [Translation models (v2)](translation-models-v2.html). 
 {: tip}
 
@@ -197,50 +204,6 @@ The following models can translate Dutch text.
     </td>
     <td>
      Dutch (nl)
-    </td>
-    <td>
-     English (en)
-    </td>
-    <td>
-     general
-    </td>
-    <td>
-     true
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
-
-## Arabic
-{: #arabic}
-
-The following models can translate Arabic text.
-
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     ar-en
-    </td>
-    <td>
-     Arabic (ar)
     </td>
     <td>
      English (en)
