@@ -41,7 +41,7 @@ The service requires training data to be provided in the [Translation Memory Exc
 
 To create a model that is customized with a parallel corpus and a forced glossary, proceed in two steps: customize with a parallel corpus first and then customize the resulting model with a glossary. Depending on the type of customization and the size of the uploaded corpora, training can range from minutes for a glossary to several hours for a large parallel corpus. You can upload a single forced glossary file and this file must be less than 10 MB. You can upload multiple parallel corpora tmx files. The cumulative file size of all uploaded files is limited to 250 MB. To successfully train with a parallel corpus you must have at least 5,000 parallel sentences in your corpus.
 
-The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure to provide examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
+The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure your training data contains examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
 {: tip}
 
 After you have created either a [Translation Memory Exchange (TMX) file](#creating-tmx-files) for forced glossary or parallel corpus customization,
