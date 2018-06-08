@@ -82,7 +82,7 @@ The API response will contain details about your custom model, including its mod
 ## Step 3: Check the status of your model
 {: #check-model-status}
 
-Model training might take anywhere from a couple of minutes (for forced glossaries) to several hours (for large parallel corpora) depending on how much training data is involved. To see if your model is available, use the [Get model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#get-model) method and specify the model ID that you saw in Step 2. Also, you can check the status of all of your models with the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#list-models) method.
+Model training might take anywhere from a couple of minutes (for forced glossaries) to several hours (for large parallel corpora) depending on how much training data is involved. To see if your model is available, use the [Get model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#get-model) method and specify the model ID that you received in the service response in Step 2. Also, you can check the status of all of your models with the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#list-models) method.
 
 The `status` response attribute describes the state of the model in the training process:
 
@@ -172,7 +172,7 @@ The following example shows a TMX file with two translation pairs. The first pai
 ## Parallel corpus customization
 {: #parallel-corpus-customization}
 
-Use a **parallel corpus** to provide additional translations for the base model to learn from. How the resulting custom model translates text depends on the model's combined understanding of the parallel corpus and the base model.
+Use a **parallel corpus** to provide additional translations for the base model to learn from. This helps to adapt the base model to a specific domain. How the resulting custom model translates text depends on the model's combined understanding of the parallel corpus and the base model.
 
 - Training data format: [TMX](#creating-tmx-files) (UTF-8 encoded)
 - Minimum number of translation pairs: 5,000
