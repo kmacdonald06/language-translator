@@ -20,7 +20,7 @@ lastupdated: "2018-04-12"
 # Customizing your model
 {: #customizing}
 
-Some of the provided translation models in {{site.data.keyword.languagetranslatorshort}} can be extended to learn custom terms and phrases or a general style that's derived from your translation data. Follow these instructions to create your own custom translation model.
+Most of the provided translation models in {{site.data.keyword.languagetranslatorshort}} can be extended to learn custom terms and phrases or a general style that's derived from your translation data. Follow these instructions to create your own custom translation model.
 {: shortdesc}
 
 ## Before you begin
@@ -34,12 +34,14 @@ Some of the provided translation models in {{site.data.keyword.languagetranslato
 ## Step 1: Create your training data
 {: #create-your-training-data}
 
-The training data format you need to provide depends on which of the following customization options you choose. You can store up to 10 customizations per service instance, and the cumulative file size of all uploaded glossary and corpus files is limited to 250 MB.
+The service requires training data to be provided in the [Translation Memory Exchange (TMX) file format](#creating-tmx-files). You can store up to 10 customizations per service instance, and for each customization request the cumulative file size of all uploaded glossary and corpus files is limited to 250 MB. The service supports two types of customization requests. You can either customize a model with a forced glossary or with a corpus that contains parallel sentences:
 
 - Use a [forced glossary](#forced-glossary-customization) to force certain terms and phrases to be translated in a specific way.
 - Use a [parallel corpus](#parallel-corpus-customization) when you want your custom model to learn from general translation patterns in your samples. What your model learns from a parallel corpus can improve translation results for input text that the model hasn't been trained on.
 
-The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure to provide examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
+To create a model that is customized with a parallel corpus and a forced glossary, proceed in two steps: customize with a parallel corpus first and then customize the resulting model with a glossary. Depending on the type of customization and the size of the uploaded corpora, training can range from minutes for a glossary to several hours for a large parallel corpus. You can upload a single forced glossary file and this file must be less than 10 MB. You can upload multiple parallel corpora tmx files. The cumulative file size of all uploaded files is limited to 250 MB. To successfully train with a parallel corpus you must have at least 5,000 parallel sentences in your corpus.
+
+The base models are trained to perform best on factual content with proper grammar and capitalization. If you plan to translate informal content, make sure your training data contains examples of informal language, slang, commands, exclamatory phrases, or types of questions that you wouldn't expect to find in formal publications.
 {: tip}
 
 After you have created either a [Translation Memory Exchange (TMX) file](#creating-tmx-files) for forced glossary or parallel corpus customization,
@@ -48,17 +50,17 @@ or a plain text file for monolingual corpus customization, you're ready to train
 ## Step 2: Train your model
 {: #train-your-model}
 
-Use the [Create model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#create-model) method to train your model. In your request, specify the model ID of a customizable base model, and training data in one or more of the `forced_glossary`, `parallel_corpus`, or `monolingual_corpus` parameters.
+Use the [Create model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#create-model) method to train your model. In your request, specify the model ID of a customizable base model, and training data in either the `forced_glossary` or `parallel_corpus` parameters. When customizing with a forced glossary you can upload a single glossary of maximal 10 MB via the `forced_glossary` multipart form parameter. When customizing with a parallel corpus, you can upload multiple files of cumulative maximal 250 MB by repeatedly specifying the `parallel_corpus` multipart form parameter with different file names.
 
 ### Example request
-The following example request uses a forced glossary file, _glossary.tmx_, to customize the `en-fr` base model. See the [Forced glossary customization](#forced-glossary) section for an example forced glossary TMX file. 
+The following example request uses a forced glossary file, _glossary.tmx_, to customize the `en-es` base model. See the [Forced glossary customization](#forced-glossary) section for an example forced glossary TMX file. 
 
 ```bash
-curl --user "{username}":"{password}" -X POST --form base_model_id="en-fr" --form forced_glossary=@glossary.tmx https://gateway.watsonplatform.net/language-translator/api/v2/models
+curl --user "{username}":"{password}" -X POST --form forced_glossary=@glossary.tmx "https://gateway.watsonplatform.net/language-translator/api/v3/models?version=2018-05-01&base_model_id=en-es&name=custom-english-to-spanish"
 ```
 {: pre}
 
-The API response will contain details about your custom model, including its model ID. Use the model ID to check the status of your model, and to translate sentences once the model is available.
+The API response will contain details about your custom model, including its model ID. Use the model ID to check the status of your model, and to translate sentences once the status of the model becomes "available".
 
 ```json
 {
@@ -80,7 +82,7 @@ The API response will contain details about your custom model, including its mod
 ## Step 3: Check the status of your model
 {: #check-model-status}
 
-Model training might take anywhere from a couple of minutes to several hours depending on how much training data is involved. To see if your model is available, use the [Get model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#get-model) method and specify the model ID that you saw in Step 2. Also, you can check the status of all of your models with the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#list-models) method.
+Model training might take anywhere from a couple of minutes (for forced glossaries) to several hours (for large parallel corpora) depending on how much training data is involved. To see if your model is available, use the [Get model ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#get-model) method and specify the model ID that you received in the service response in Step 2. Also, you can check the status of all of your models with the [List models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html#list-models) method.
 
 The `status` response attribute describes the state of the model in the training process:
 
@@ -170,7 +172,7 @@ The following example shows a TMX file with two translation pairs. The first pai
 ## Parallel corpus customization
 {: #parallel-corpus-customization}
 
-Use a **parallel corpus** to provide additional translations for the base model to learn from. How the resulting custom model translates text depends on the model's combined understanding of the parallel corpus and the base model.
+Use a **parallel corpus** to provide additional translations for the base model to learn from. This helps to adapt the base model to a specific domain. How the resulting custom model translates text depends on the model's combined understanding of the parallel corpus and the base model.
 
 - Training data format: [TMX](#creating-tmx-files) (UTF-8 encoded)
 - Minimum number of translation pairs: 5,000

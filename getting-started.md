@@ -22,7 +22,7 @@ lastupdated: "2018-04-27"
 # Getting started tutorial
 {: #gettingstarted}
 
-{{site.data.keyword.languagetranslatorfull}} allows you to programmatically translate text in news, conversational, and patent domains. This tutorial walks you through the commands to translate text from English to Spanish.
+{{site.data.keyword.languagetranslatorfull}} allows you to programmatically translate text from one language into another language. This tutorial walks you through the commands to translate text from English to Spanish.
 {:shortdesc}
 
 ## Before you begin
@@ -32,15 +32,16 @@ lastupdated: "2018-04-27"
 - Create an instance of the service:
     1.  Go to the [{{site.data.keyword.languagetranslatorshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/catalog/services/language-translator){: new_window} page in the {{site.data.keyword.Bluemix_notm}} Catalog.
     1.  Sign up for a free {{site.data.keyword.Bluemix_notm}} account or log in.
+    1.  Select a service plan, e.g. select the free lite plan for testing the service.
     1.  Click **Create**.
 - Copy the credentials to authenticate to your service instance:
     1.  On the service dashboard, click the **Service credentials** tab.
     1.  Click **View credentials** under **Actions**.
     1.  Copy the `username`, `password`, and `url` values.
     
-    **Important:** The tutorial uses Basic Authentication credentials. In some regions, new service instances instead use {{site.data.keyword.cloud}} Identity and Access Management (IAM) tokens for authentication. Authenticate by using the approach that is right for your region and service instance.
+    **Important:** The tutorial uses Basic Authentication credentials. In some regions, new service instances also allow for {{site.data.keyword.cloud}} Identity and Access Management (IAM) tokens for authentication. Authenticate by using the approach that is right for your region and service instance.
 
-    For more information about authenticating with IAM, view 
+    For more information about authenticating with IAM, view //FIXME missing link 
 - Make sure you have cURL:
     - The examples use cURL to call methods of the HTTP interface. Install the version for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. Install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
  
@@ -51,7 +52,7 @@ lastupdated: "2018-04-27"
 Use the following example to translate two phrases, "Hello, world!" and "What's up?", from English to Spanish. Replace `{username}` and `{password}` with the service credentials you copied in the previous step.
 
 ```bash
-curl --user "{username}":"{password}" --request POST --header "Content-Type: application/json" --data "{\"text\":[\"Hello, world\",\"What's up?\"],\"model_id\":\"en-es\"}" https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01
+curl --user "{username}":"{password}" --request POST --header "Content-Type: application/json" --data '{"text": ["Hello, world.", "How are you?"], "model_id":"en-es"}' https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01
 ```
 {: pre}
 

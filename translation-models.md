@@ -26,7 +26,6 @@ The Language Translator v2 API has been deprecated. This page lists translation 
   - [Chinese (Simplified)](#chinese-simplified)
   - [Chinese (Traditional)](#chinese-traditional)
   - [Dutch](#dutch)
-  - [Arabic](#arabic)
   - [English](#english)
   - [French](#french)
   - [German](#german)

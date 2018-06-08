@@ -124,7 +124,7 @@ The following languages can be identified by the service with the `/identify` en
    </tr>
    <tr>
     <td>
-     Chinese
+     Chinese (Simplified)
     </td>
     <td>
      zh
@@ -484,7 +484,7 @@ The following languages can be identified by the service with the `/identify` en
    </tr>
    <tr>
     <td>
-     Traditional Chinese
+     Chinese (Traditional)
     </td>
     <td>
      zh-TW
