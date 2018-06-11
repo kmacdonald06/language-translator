@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-02-13"
+lastupdated: "2018-06-12"
 
 ---
 
@@ -19,10 +19,13 @@ lastupdated: "2018-02-13"
 
 # About
 
-{{site.data.keyword.languagetranslatorfull}} is a translation API that can identify the language of your text and translate it into different languages programmatically.
+{{site.data.keyword.languagetranslatorfull}} can identify the language of text and translate it into different languages programmatically.
 {: shortdesc}
 
 In addition to using the provided translation models, you can build upon the base translation models to create your own [custom models](customizing.html) for your use case.
+
+{{site.data.keyword.languagetranslatorshort}} v3 is now available, and **the v2 {{site.data.keyword.languagetranslatorshort}} API is now deprecated.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
+{: tip}
 
 ## Quick links
 
