@@ -28,7 +28,7 @@ In addition to using the provided translation models, you can build upon the bas
 
 - [Get started](getting-started.html).
 - Try the live [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://language-translator-demo.ng.bluemix.net/){: new_window}.
-- View the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v2/index.html){: new_window}.
+- View the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/index.html){: new_window}.
 - View language support information:
   - [Translation models](translation-models.html)
   - [Identifiable languages](identifiable-languages.html)
