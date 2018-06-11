@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-04-12"
+lastupdated: "2018-06-12"
 
 ---
 
@@ -19,11 +19,12 @@ lastupdated: "2018-04-12"
 {{site.data.keyword.languagetranslatorshort}} can translate the following languages.
 Click a language in the list below to view a list of compatible translation models.
 
-Alternatively, you can use the List models API method to get a list of translation models supported by the service programmatically. You can filter results by language with the `source` and `target` parameters. Use the following example to list model for the source language English and target language Spanish.
+You can also use the **List models** API method to view the translation models that are available, including your custom models. You can filter results by language with the `source` and `target` parameters. The following example lists models that can translate English to Spanish.
 
 ```bash
-curl --user "{username}":"{password}" "https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01"
+curl --user {username}:{password} https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01
 ```
+{: pre}
 
 
 The Language Translator v2 API has been deprecated. This page lists translation models for the v3 API. The translation models for the v2 API are listed in [Translation models (v2)](translation-models-v2.html). 

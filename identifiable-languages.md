@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-06-12"
 
 ---
 
@@ -17,11 +17,12 @@ lastupdated: "2018-02-06"
 
 The following languages can be identified by the service with the `/identify` endpoint. 
 
-Alternatively, you can use the List identifiable languages API method to get a list of identifiable languages supported by the service programmatically as shown in the following example:
+You can also use the **List identifiable languages** API method to get the identifiable languages programmatically:
 
 ```bash
-curl --user "{username}":"{password}" "https://gateway.watsonplatform.net/language-translator/api/v3/identifiable_languages?version=2018-05-01"
+curl --user {username}:{password} https://gateway.watsonplatform.net/language-translator/api/v3/identifiable_languages?version=2018-05-01
 ```
+{: pre}
 
 <table>
  <thead>

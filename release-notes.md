@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-03-20"
+lastupdated: "2018-06-12"
 
 ---
 
@@ -31,10 +31,10 @@ Send the version parameter with every API request. The service uses the API vers
 
 The current version is `2018-05-01`.
 
-## 7 June 2018
-{: #7-june-2018}
+## 12 June 2018
+{: #12-june-2018}
 
-Lanugage Translator v3 is now available, and **the v2 Language Translator API is now deprecated.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
+{{site.data.keyword.languagetranslatorshort}} v3 is now available, and **the v2 {{site.data.keyword.languagetranslatorshort}} API is now deprecated.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
 
 ### What's new in v3
 - New Neural Machine Translation models offer improved translation results, and are now available for customization.
@@ -48,6 +48,10 @@ Lanugage Translator v3 is now available, and **the v2 Language Translator API is
 - Monolingual corpus customization is not supported in v3.
 - Each translation model that is currently available in v3 is designed for a general domain. News, patent, and conversational domain models, are not available in v3. 
 - Error object keys have been renamed so that they are consistent with other services. `error_code` has been renamed to `code`, and `error_message` has been renamed to `error`.
+
+### IAM authentication
+
+{{site.data.keyword.languagetranslatorshort}} supports [Identity and Access Management (IAM)](/docs/services/watson/getting-started-iam.html) authentication for service instances created in Sydney (au-syd) and Washington D.C. (us-east) as of June 12, 2018. {{site.data.keyword.Bluemix}} is in the process of migrating to token-based Identity and Access Management (IAM) authentication. IAM uses access tokens rather than username and password credentials to authenticate with a service. IAM authentication will be available for {{site.data.keyword.languagetranslatorshort}} service instances in other regions soon.
 
 
 ## 12 January 2018
