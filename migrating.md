@@ -34,7 +34,7 @@ lastupdated: "2018-06-12"
 ## Breaking changes
 {: #breaking-changes}
 
-- Mandatory version date for all API endpoints: API v3 requests require a version date query parameter of the form `version=yyyy-dd-mm`. The latest API version is `version=2018-05-01`.
+- Mandatory version date for all API endpoints: API v3 requests require a version date query parameter of the form `version=YYYY-MM-DD`. The latest API version is `version=2018-05-01`.
 - Simplified API:
   - The **Translate** and **Identify** methods do not offer the option to return plain text responses in v3.
   - `GET /translate` and `GET /identify` methods are not supported in v3. Use the `POST /translate` and `POST /identify` methods instead. 
