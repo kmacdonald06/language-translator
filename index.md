@@ -24,7 +24,7 @@ lastupdated: "2018-06-12"
 
 In addition to using the provided translation models, you can build upon the base translation models to create your own [custom models](customizing.html) for your use case.
 
-{{site.data.keyword.languagetranslatorshort}} v3 is now available, and **the v2 {{site.data.keyword.languagetranslatorshort}} API is now deprecated.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
+{{site.data.keyword.languagetranslatorshort}} v3 is now available. To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
 {: tip}
 
 ## Quick links
