@@ -37,17 +37,24 @@ The current version is `2018-05-01`.
 {{site.data.keyword.languagetranslatorshort}} v3 is now available, and **the v2 {{site.data.keyword.languagetranslatorshort}} API is now deprecated.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
 
 ### What's new in v3
-- New Neural Machine Translation models offer improved translation results, and are now available for customization.
+{: #whats-new}
+
+-  {{site.data.keyword.languagetranslatorshort}} API v3 comes with **Neural Machine Translation** (NMT) models that offer significantly improved translation results. All NMT models are now available for customization.
+-  Use custom models as base models for forced glossary customization.
+-  API v3 is a simplified, all-JSON subset of the retired API v2.
+-  Introduces API version dates to give developers the freedom to adopt future API changes at their own pace.
 
 ### Breaking changes
-- v3 API requests require a version date query parameter of the form `version=2018-05-01`.
-- The **Translate** and **Identify** methods do not offer the option to return plain text responses in v3.
-- `GET /translate` and `GET /identify` methods are not supported in v3. Use the `POST /translate` and `POST /identify` methods instead. 
-- Custom models trained with the v2 API are not compatible with v3. To use custom models in v3, you will need to train new models.
-- Creating custom models with a parallel corpus and forced glossary now needs to be done in two steps. First, you must customize the model with a parallel corpus. After the model has finished training, you can add the forced glossary to the customized model.
+{: #breaking-changes}
+
+- Mandatory version date for all API endpoints: API v3 requests require a version date query parameter of the form `version=2018-05-01` (date format `YYYY-DD-MM`). The latest API version is `version=2018-05-01`.
+- Simplified API:
+  - The **Translate** and **Identify** methods do not offer the option to return plain text responses in v3.
+  - `GET /translate` and `GET /identify` methods are not supported in v3. Use the `POST /translate` and `POST /identify` methods instead. 
 - Monolingual corpus customization is not supported in v3.
-- Each translation model that is currently available in v3 is designed for a general domain. News, patent, and conversational domain models, are not available in v3. 
-- Error object keys have been renamed so that they are consistent with other services. `error_code` has been renamed to `code`, and `error_message` has been renamed to `error`.
+- Creating custom models with both a parallel corpus and forced glossary now needs to be done in two API calls. First, customize the model with a parallel corpus. After the custom model has finished training, customize it again with the forced glossary. This change allows to quickly decorate an existing custom model with an updated glossary instead of requiring to retrain a custom model from scratch.
+- Specialized patent and conversation domain models are not available in API v3. The translation quality provided by the NMT models in the patent and conversation domains is generally improved compared to the older specialized models.
+- Error object keys have been renamed so that they are consistent with other Watson APIs. `error_code` has been renamed to `code`, and `error_message` has been renamed to `error`.
 
 ### IAM authentication
 
