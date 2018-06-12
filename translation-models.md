@@ -16,6 +16,9 @@ lastupdated: "2018-06-12"
 # Translation models
 {: #translation-models}
 
+This page lists translation models for the v3 API. The translation models for the v2 API are listed in [Translation models (v2)](translation-models-v2.html). 
+{: tip}
+
 {{site.data.keyword.languagetranslatorshort}} can translate the following languages.
 Click a language in the list below to view a list of compatible translation models.
 
@@ -25,10 +28,6 @@ You can also use the **List models** API method to view the translation models t
 curl --user {username}:{password} https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01
 ```
 {: pre}
-
-
-The Language Translator v2 API has been deprecated. This page lists translation models for the v3 API. The translation models for the v2 API are listed in [Translation models (v2)](translation-models-v2.html). 
-{: tip}
 
   - [Arabic](#arabic)
   - [Chinese (Simplified)](#chinese-simplified)
