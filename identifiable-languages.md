@@ -139,6 +139,14 @@ curl --user {username}:{password} https://gateway.watsonplatform.net/language-tr
    </tr>
    <tr>
     <td>
+     Chinese (Traditional)
+    </td>
+    <td>
+     zh-TW
+    </td>
+   </tr>
+   <tr>
+    <td>
      Chuvash
     </td>
     <td>
@@ -487,14 +495,6 @@ curl --user {username}:{password} https://gateway.watsonplatform.net/language-tr
     </td>
     <td>
      te
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Chinese (Traditional)
-    </td>
-    <td>
-     zh-TW
     </td>
    </tr>
    <tr>
