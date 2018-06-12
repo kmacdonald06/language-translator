@@ -34,7 +34,7 @@ The current version is `2018-05-01`.
 ## 12 June 2018
 {: #12-june-2018}
 
-{{site.data.keyword.languagetranslatorshort}} v3 is now available. **The v2 {{site.data.keyword.languagetranslatorshort}} API will no longer be available after July 31, 2018.** To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
+{{site.data.keyword.languagetranslatorshort}} v3 is now available. To take advantage of the latest service enhancements, migrate to the v3 API. View the [Migrating to Language Translator v3](migrating.html) page for more information.
 
 ### What's new in v3
 {: #whats-new}
