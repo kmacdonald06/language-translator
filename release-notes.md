@@ -49,7 +49,7 @@ The current version is `2018-05-01`.
 
 - Mandatory version date for all API endpoints: API v3 requests require a version date query parameter of the form `version=2018-05-01` (date format `YYYY-DD-MM`). The latest API version is `version=2018-05-01`.
 - Simplified API:
-  - The **Translate** and **Identify** methods do not offer the option to return plain text responses in v3.
+  - The **Translate** and **Identify** methods do not offer the option to return plain text responses in v3. The methods return JSON responses only.
   - `GET /translate` and `GET /identify` methods are not supported in v3. Use the `POST /translate` and `POST /identify` methods instead. 
 - Monolingual corpus customization is not supported in v3.
 - Creating custom models with both a parallel corpus and forced glossary now needs to be done in two API calls. First, customize the model with a parallel corpus. After the custom model has finished training, customize it again with the forced glossary. This change allows to quickly decorate an existing custom model with an updated glossary instead of requiring to retrain a custom model from scratch.
