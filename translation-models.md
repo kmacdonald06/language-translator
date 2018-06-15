@@ -25,7 +25,7 @@ Click a language in the list below to view a list of compatible translation mode
 You can also use the **List models** API method to view the translation models that are available, including your custom models. You can filter results by language with the `source` and `target` parameters. The following example lists models that can translate English to Spanish.
 
 ```bash
-curl --user {username}:{password} https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01
+curl --user apikey:{apikey_value} https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01
 ```
 {: pre}
 
