@@ -25,7 +25,7 @@ The following new features and changes to the service are available.
 ## New API authentication process
 {: #iam-auth-process }
 
-The {{site.data.keyword.[[service]]}} service has a new API authentication process for service instances that are hosted in the following regions and dates:
+The {{site.data.keyword.languagetranslatorshort}} service has a new API authentication process for service instances that are hosted in the following regions and dates:
 
 - Sydney as of June 12, 2018
 - US East as of June 12, 2018
@@ -36,7 +36,7 @@ The {{site.data.keyword.[[service]]}} service has a new API authentication proce
 
 - For _new_ service instances in the regions and dates indicated previously, you use IAM for authentication. You can pass either a bearer token or an API key. Tokens support authenticated requests without embedding service credentials in every call. API keys use basic authentication.
 
-    When you use any of the Watson SDKs, you can pass the API key and let the SDK manage the lifecycle of the tokens. For more information and examples, see See [Authentication ![External link icon](../k../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/[[serviceName]]/api/v[[version]]/curl.html?curl#authentication){: new_window} in the API reference.
+    When you use any of the Watson SDKs, you can pass the API key and let the SDK manage the lifecycle of the tokens. For more information and examples, see See [Authentication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/language-translator/api/v3/curl.html?curl#authentication){: new_window} in the API reference.
 - For _existing_ service instances that you created before the indicated date, you continue to authenticate by providing the username and password for the service instance. Eventually, you will need to migrate these service instances to IAM authentication. Updates will be provided about migration process and dates. For more information about migration, see [Migrating Cloud Foundry service instances to a resource group](/docs/resources/instance_migration.html).
 
 To find out which authentication to use, view the service credentials by clicking the service instance on the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/dashboard/apps?watson){: new_window}.
