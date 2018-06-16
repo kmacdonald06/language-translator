@@ -44,7 +44,8 @@ lastupdated: "2018-06-12"
 - Make sure you have cURL:
     - The examples use cURL to call methods of the HTTP interface. Install the version for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. Install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
 
-This tutorial uses an API key to authenticate. For production uses, make sure that you review the API key best practices. {: tip}
+This tutorial uses an API key to authenticate. For production uses, make sure that you review the API key best practices.
+{: tip}
 
 ## Step 1: Translate text
 {: #translate-text}
