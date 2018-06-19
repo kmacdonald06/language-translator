@@ -41,7 +41,7 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
 
 ## Step 2: Select a document to translate
 
-- Select **Browse**, and select a document from your system to translate. Supported document types are listed.
+- Select **Browse**, and select a document from your system to translate. Supported document types are listed. Maximum file size is 100MB.
 
 - Choose a language *From* and *To* from the drop-down menus
 
@@ -54,4 +54,4 @@ The Document Translator begins to translate your document.
 
 - Open the *Show Documents List* drop-down to see the tasks you have sent to the Document Translator.
 
-- Once the Status shows as `done`, select the **Get** button to download and save your translated document. You can also choose to delete the document by selecting the **Del** button.
+- Once the Status shows as `done`, select **Get** to download and save your translated document. You can also choose to delete the document by selecting **Del**.
