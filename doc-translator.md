@@ -57,11 +57,13 @@ The Document Translator begins to translate your document.
 - Once the Status shows as `done`, select **Get** to download and save your translated document. You can also choose to delete the document by selecting **Del**.
 
 - If you have uploaded a larger document, you will be able to track status in the dropdown: 
+
 Initial | Extracted | Segmented | Translated | Inserted | Done
 
 ## Supported File Types
 
 **Note:** In this technology preview the following types are supported:
+
 **Microsoft:**
 Word (.doc, .docx)
 PowerPoint (.ppt, .pptx)
