@@ -37,11 +37,11 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
     - For *Language Translator Credentials*, depending on your service instance, you authenticate by providing either your `username` and `password`, or `apikey` and `{apikey_value}`.
     - For *Bluemix User Credentials*, provide your {{site.data.keyword.Bluemix_notm}} account user name and password.
 
-- Click the **Login** button to log in
+- Click **Login** to log in
 
 ## Step 2: Select a document to translate
 
-- Select the **Browse** button, and select a document from your system to translate. Supported document types are listed.
+- Select **Browse**, and select a document from your system to translate. Supported document types are listed.
 
 - Choose a language *From* and *To* from the drop-down menus
 
