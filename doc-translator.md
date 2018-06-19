@@ -19,7 +19,7 @@ lastupdated: "2018-06-19"
 {:swift: .ph data-hd-programlang='swift'}
 {:download: .download}
 
-# Document translator tutorial
+# Using the Document Translator
 {: #doc-translator-tutorial}
 
 The Watson Document Translator allows you to translate documents from one language into another language, for a variety of file formats. This tutorial walks you through the commands to translate a document from English to French.
