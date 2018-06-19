@@ -45,7 +45,7 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
 
 - Choose a language *From* and *To* from the drop-down menus
 
-- Select the **Translate** button.
+- Click **Translate**.
 
 ### Results
 The Document Translator begins to translate your document.
