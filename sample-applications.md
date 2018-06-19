@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-06-19"
 
 ---
 
@@ -24,6 +24,14 @@ Check out the following sample applications to see what you can build with {{sit
 
 These systems are for demonstration purposes only and are not intended to process Personal Data. No Personal Data is to be entered into these systems as they may not have the necessary controls in place to meet the requirements of the General Data Protection Regulation (EU) 2016/679.
 
+## IBM Watson Document Translator
+{: #multilingual-conference-room}
+
+The Watson Document Translator allows you to translate documents from one language to another language while preserving file formatting. Translate over 12 file formats including MS Office, Open Office, PDF file types. **Note: This is a preview of Watson Document Translator. For preview limitations see documentation link below.**
+
+- [Documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/docs/services/language-translator/doc-translator.html)
+- [Web App ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/doc-translator)
+
 ## Multilingual Chatbot (Node.js, Python)
 {: #multilingual-chatbot}
 
@@ -33,15 +41,6 @@ This chatbot built with Watson Assistant and Cloud Functions adds support for mu
 - [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://multilingual-chatbot-demo.mybluemix.net/)
 - [YouTube video ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=d7DXydORTME)
 - [Read more ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://medium.com/ibm-watson/build-multilingual-chatbots-with-watson-language-translator-watson-assistant-8c38247e8af1)
-
-## Serverless Multilingual Conference Rooms (Node.js)
-{: #multilingual-conference-room}
-
-This Node.js application creates a communications channel allowing clients who speak different languages to seamlessly communicate with each other. Useful in meeting rooms and conference calls, see how Watson Language Translator integrates with Text to Speech
-
-- [Read More ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/code/patterns/deploy-serverless-multilingual-conference-room/)
-- [View on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM/serverless-language-translation)
-- [Live demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://translation-mqtt.mybluemix.net/?cm_sp=dw-bluemix-_-code-_-devcenter&cm_mc_uid=03977355774115264326249&cm_mc_sid_50200000=53622421526652186685)
 
 ## Language Translator demo (Node.js)
 {: #language-translator-demo}
