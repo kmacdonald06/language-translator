@@ -62,7 +62,7 @@ Initial | Extracted | Segmented | Translated | Inserted | Done
 
 ## Supported File Types
 
-**Note:** In this technology preview the following types are supported:
+**In this technology preview the following types are supported:**
 
 **Microsoft:**
 Word (.doc, .docx)
