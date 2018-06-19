@@ -34,7 +34,6 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
 
 - Select either *Language Translator Credentials* or *Bluemix User Credentials* from the drop-down:
 
-  ![](images/dt-login-1.png)
     - For *Language Translator Credentials*, depending on your service instance, you authenticate by providing either your `username` and `password`, or `apikey` and `{apikey_value}`.
     - For *Bluemix User Credentials*, provide your {{site.data.keyword.Bluemix_notm}} account user name and password.
 
@@ -44,12 +43,9 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
 
 - Select the **Browse** button, and select a document from your system to translate. Supported document types are listed.
 
-  ![](images/dt-tool-1.png)
-
 - Choose a language *From* and *To* from the drop-down menus
 
 - Select the **Translate** button.
-  ![](images/dt-tool-2.png)
 
 ### Results
 The Document Translator begins to translate your document.
@@ -58,4 +54,4 @@ The Document Translator begins to translate your document.
 
 - Open the *Show Documents List* drop-down to see the tasks you have sent to the Document Translator.
 
-- Once the Status shows as *done*, select the **Get** button to download and save your translated document. You can also choose to delete the document by selecting the **Del** button.
+- Once the Status shows as `done`, select the **Get** button to download and save your translated document. You can also choose to delete the document by selecting the **Del** button.
