@@ -34,7 +34,7 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
 
 - Select either *Language Translator Credentials* or *Bluemix User Credentials* from the drop-down:
 
-    - For *Language Translator Credentials*, depending on your service instance, you authenticate by providing either your `username` and `password`, or `apikey` and `{apikey_value}`.
+    - For *Language Translator Credentials*, depending on your service instance, you authenticate by providing either your `username` and `password`, or type `apikey` in the username slot and the `{apikey_value}` in the password slot.
     - For *Bluemix User Credentials*, provide your {{site.data.keyword.Bluemix_notm}} account user name and password.
 
 - Click **Login** to log in
