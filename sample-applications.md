@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-06-19"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -29,7 +29,7 @@ These systems are for demonstration purposes only and are not intended to proces
 
 The IBM Watson Document Translator allows you to translate documents from one language to another language while preserving file formatting. Translate over 12 file formats including MS Office, Open Office, PDF file types. **Note: This is a preview of Watson Document Translator. For preview limits and instructions see the links below.**
 
-- [Instructions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/docs/services/language-translator/doc-translator.html)
+- [Instructions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/language-translator/doc-translator.html)
 - [Try it out ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/doc-translator)
 
 ## Multilingual Chatbot (Node.js, Python)
