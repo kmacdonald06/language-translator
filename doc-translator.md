@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-06-19"
+lastupdated: "2018-06-20"
 
 ---
 <!-- Attribute definitions -->
@@ -19,7 +19,7 @@ lastupdated: "2018-06-19"
 {:swift: .ph data-hd-programlang='swift'}
 {:download: .download}
 
-# Using the Document Translator
+# Using the IBM Watson Document Translator
 {: #doc-translator-tutorial}
 
 The IBM Watson Document Translator allows you to translate documents from one language to another while preserving file formatting. Translate over 12 file formats including MS Office, Open Office, PDF file types. This tutorial walks you through the commands to translate a document from English to French.
@@ -30,7 +30,7 @@ The IBM Watson Document Translator allows you to translate documents from one la
 
 You will need either your {{site.data.keyword.languagetranslatorshort}} credentials or your {{site.data.keyword.Bluemix_notm}} account credentials to log into the Document Translator.
 
-- Go to the [Document Translator ![External link icon](../../icons/launch-glyph.svg "External link icon")](ibm.biz/doc-translator){: new_window}
+- Go to the [IBM Watson Document Translator ![External link icon](../../icons/launch-glyph.svg "External link icon")](ibm.biz/doc-translator){: new_window}
 
 - Select either *Language Translator Credentials* or *Bluemix User Credentials* from the drop-down:
 
@@ -48,7 +48,7 @@ You will need either your {{site.data.keyword.languagetranslatorshort}} credenti
 - Click **Translate**.
 
 ### Results
-The Document Translator begins to translate your document.
+The IBM Watson Document Translator begins to translate your document.
 
 ## Step 2: Review your translated document
 
@@ -60,11 +60,11 @@ The Document Translator begins to translate your document.
 
 Initial | Extracted | Segmented | Translated | Inserted | Done
 
-## Supported File Types
+## Supported file types
 
-**In this technology preview the following types are supported:**
+**In this technology preview the following file types are supported:**
 
-**Microsoft:**
+**Microsoft Office:**
 Word (.doc, .docx)
 PowerPoint (.ppt, .pptx)
 Excel (.xls, .xlsx)
@@ -75,8 +75,8 @@ Writer (.odt)
 Impress (.odp)
 Calc (.ods)
 
-**Additional**
-PDF (.pdf) - translation result returned as .docx and .pdf (or .txt if conversion fails ...)
+**Additional:**
+PDF (.pdf) - Translation result returned as .docx and .pdf
 HTML (.htm, .html)
 XML (.xml)
 JSON (.json) - all values of type string and string array are translated
