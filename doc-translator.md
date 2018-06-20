@@ -34,12 +34,8 @@ To find out which authentication to use, view the service credentials by clickin
 
 ## Step 1: Log into Document Translator
 
-1.  Go to [Document Translator ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/doc-translator){: new_window}
-1.  Select either **Language Translator Credentials** or **Bluemix User Credentials**:
-
-    - Language Translator Credentials: Use service credentials that you found earlier. To log in with an API key, enter `apikey` as the username and the value of the key as the password.
-    - Bluemix account credentials: Enter your {{site.data.keyword.Bluemix_notm}} account {{site.data.keyword.ibmid}} and password.
-1.  Click **Login**.
+1.  Go to [Document Translator ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/doc-translator){: new_window}.
+1.  Use the service credentials that you found earlier. To log in with an API key, enter `apikey` as the username and the value of the key as the password. Click **Login**.
 
 ## Step 2: Send a document for translation
 
