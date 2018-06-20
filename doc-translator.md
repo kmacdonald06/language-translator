@@ -19,67 +19,62 @@ lastupdated: "2018-06-20"
 {:swift: .ph data-hd-programlang='swift'}
 {:download: .download}
 
-# Using the IBM Watson Document Translator
+# Using the Document Translator
 {: #doc-translator-tutorial}
 
-The IBM Watson Document Translator allows you to translate documents from one language to another while preserving file formatting. Translate over 12 file formats including MS Office, Open Office, PDF file types. This tutorial walks you through the commands to translate a document from English to French.
+The {{site.data.keyword.ibmwatson}} Document Translator allows you to translate documents from one language to another while it preserves the formatting in the file. You can translate more than 12 different file formats, including MS Office, Open Office, and PDF files. In this tutorial, you learn how to translate a document with the tool.
 {:shortdesc}
-
-## Supported file types
-In this technology preview the following file types are supported:
-
-**Microsoft Office**
-
-- Word (.doc, .docx)
-- PowerPoint (.ppt, .pptx)
-- Excel (.xls, .xlsx)
-- Rich Text Format (.rtf)
-
-**Open Office**
-
-- Writer (.odt)
-- Impress (.odp)
-- Calc (.ods)
-
-**Additional**
-
-- PDF (.pdf) - Translation result returned as .docx and .pdf
-- HTML (.htm, .html)
-- XML (.xml)
-- JSON (.json) - all values of type `string` and `string array` are translated
-- TEXT (.txt)
 
 ## Before you begin
 {: #prerequisites}
 
-You will need either your {{site.data.keyword.languagetranslatorshort}} credentials or your {{site.data.keyword.Bluemix_notm}} account credentials to log into the Document Translator.
+You need either your {{site.data.keyword.languagetranslatorshort}} service credentials or your {{site.data.keyword.Bluemix_notm}} account credentials to log into the Document Translator.
 
-- Go to the [IBM Watson Document Translator ![External link icon](../../icons/launch-glyph.svg "External link icon")](ibm.biz/doc-translator){: new_window}
+To find out which authentication to use, view the service credentials by clicking the service instance on the [Dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/dashboard/apps?watson){: new_window}.
 
-- Select either *Language Translator Credentials* or *Bluemix User Credentials* from the drop-down:
+## Step 1: Log into Document Translator
 
-    - For *Language Translator Credentials*, depending on your service instance, you authenticate by providing either your `username` and `password`, or type `apikey` as the username and your `{apikey_value}` as the password.
-    - For *Bluemix User Credentials*, provide your {{site.data.keyword.Bluemix_notm}} account user name and password.
+1.  Go to [Document Translator ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/doc-translator){: new_window}
+1.  Select either **Language Translator Credentials** or **Bluemix User Credentials**:
 
-- Click **Login** to log in
+    - Language Translator Credentials: Use service credentials that you found earlier. To log in with an API key, enter `apikey` as the username and the value of the key as the password.
+    - Bluemix account credentials: Enter your {{site.data.keyword.Bluemix_notm}} account {{site.data.keyword.ibmid}} and password.
+1.  Click **Login**.
 
-## Step 1: Select a document to translate
+## Step 2: Send a document for translation
 
-- Select **Browse**, and select a document from your system to translate. The maximum file size in this preview release is limited to 100MB.
+1.  Select **Browse**, and locate a document on your system to translate. The maximum file size in this preview release is 100 MB. Document Translator supports the following file types:
+    -  Microsoft Office
+        - Word (.doc, .docx)
+        - PowerPoint (.ppt, .pptx)
+        - Excel (.xls, .xlsx)
+        - Rich Text Format (.rtf)
+    - Open Office
+        - Writer (.odt)
+        - Impress (.odp)
+        - Calc (.ods)
+    - Other supported file types
+        - PDF (.pdf). Translated files are returned as both .docx and .pdf files.
+        - HTML (.htm, .html)
+        - XML (.xml)
+        - JSON (.json). All values of type `string` and `string array` are translated.
+        - TEXT (.txt)
 
-- Choose a language *From* and *To* from the drop-down menus. Additional language support will be added in future updates.
+1.  Choose the language of the document in **From** and then select a target language in **To**.
+1.  Click **Translate**.
 
-- Click **Translate**.
+## Step 3: Review your translated document
 
-### Results
-The IBM Watson Document Translator begins to translate your document.
+1.  Select *Show Documents List* to see the status of documents you translated. The translation status follows this sequence:
+    1.  Initial
+    1.  Extracted
+    1.  Segmented
+    1.  Translated
+    1.  Inserted
+    1.  Done
 
-## Step 2: Review your translated document
+1.  When the translation status is `Done`, select **Get** to download the translated document. Or select **Del** to delete the document.
 
-- Open the *Show Documents List* drop-down to see the tasks you have sent to the Document Translator.
+## Next steps
 
-- If you have uploaded a larger document, you will be able to track its status. The translation status conditions are:
-
-  Initial -> Extracted -> Segmented -> Translated -> Inserted -> Done
-
-- Once the Status shows as `Done`, select **Get** to download and save your translated document. You can also choose to delete the document by selecting **Del**.
+Experiment with other source and target languages.
