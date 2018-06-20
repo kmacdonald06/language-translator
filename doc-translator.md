@@ -25,6 +25,27 @@ lastupdated: "2018-06-20"
 The IBM Watson Document Translator allows you to translate documents from one language to another while preserving file formatting. Translate over 12 file formats including MS Office, Open Office, PDF file types. This tutorial walks you through the commands to translate a document from English to French.
 {:shortdesc}
 
+## Supported file types
+In this technology preview the following file types are supported:
+
+**Microsoft Office**
+Word (.doc, .docx)
+PowerPoint (.ppt, .pptx)
+Excel (.xls, .xlsx)
+Rich Text Format (.rtf)
+
+**Open Office**
+Writer (.odt)
+Impress (.odp)
+Calc (.ods)
+
+**Additional**
+PDF (.pdf) - Translation result returned as .docx and .pdf
+HTML (.htm, .html)
+XML (.xml)
+JSON (.json) - all values of type `string` and `string array` are translated
+TEXT (.txt)
+
 ## Before you begin
 {: #prerequisites}
 
@@ -54,30 +75,8 @@ The IBM Watson Document Translator begins to translate your document.
 
 - Open the *Show Documents List* drop-down to see the tasks you have sent to the Document Translator.
 
-- Once the Status shows as `done`, select **Get** to download and save your translated document. You can also choose to delete the document by selecting **Del**.
+- If you have uploaded a larger document, you will be able to track its status. The translation status conditions are: 
 
-- If you have uploaded a larger document, you will be able to track status in the dropdown: 
+  || Initial | Extracted | Segmented | Translated | Inserted | Done ||
 
-Initial | Extracted | Segmented | Translated | Inserted | Done
-
-## Supported file types
-
-**In this technology preview the following file types are supported:**
-
-**Microsoft Office:**
-Word (.doc, .docx)
-PowerPoint (.ppt, .pptx)
-Excel (.xls, .xlsx)
-Rich Text Format (.rtf)
-
-**Open Office:**
-Writer (.odt)
-Impress (.odp)
-Calc (.ods)
-
-**Additional:**
-PDF (.pdf) - Translation result returned as .docx and .pdf
-HTML (.htm, .html)
-XML (.xml)
-JSON (.json) - all values of type string and string array are translated
-TEXT (.txt)
+- Once the Status shows as `Done`, select **Get** to download and save your translated document. You can also choose to delete the document by selecting **Del**.
